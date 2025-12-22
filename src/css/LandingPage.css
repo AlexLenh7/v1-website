@@ -12,6 +12,7 @@
 
 .welcome-text * {
   margin-bottom: 1rem;
+  display: block;
 }
 
 .name {

@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app-container">
       <header className="static-left-side">
-        <div>
+        <div className="left-side">
           {/* Group the top elements together */}
           <div className="top-group">
             <div id="landing-page">
