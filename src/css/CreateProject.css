@@ -1,0 +1,75 @@
+.project {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: var(--background);
+  border-radius: 16px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  background-color: var(--secondary-background);
+  box-shadow: 0 0px 3px var(--primary);
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-title {
+  align-items: baseline;
+  color: var(--text);
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1;
+  margin: 0;
+}
+
+.project-date {
+  color: var(--accent);
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  line-height: 1;
+}
+
+.project-img {
+  display: block;
+  height: auto;
+  width: 20%;
+  border-radius: 16px;
+  border: 2px, solid, var(--accent);
+  object-fit: cover;
+}
+
+.project-description {
+  margin-top: 0.2rem;
+  line-height: 1.5;
+  color: var(--secondary-text);
+}
+
+/* 1. Change title color on parent hover */
+.project:hover .project-title {
+  color: var(--primary); /* Replace with your desired highlight color */
+}
+
+/* 2. Change image border color on parent hover */
+.project:hover .project-img {
+  border-color: var(--primary); /* Changes the border to your highlight color */
+}
+
+/* 3. Smooth the transitions */
+.project-title,
+.project-img {
+  transition: all 0.3s ease;
+}
+
+.tag-container {
+  margin-top: 0.7rem;
+}

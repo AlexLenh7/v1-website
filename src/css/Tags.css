@@ -1,0 +1,19 @@
+.tag-chip {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Spacing */
+  padding: 4px 12px;
+  margin-right: 8px;
+
+  /* Styling */
+  background-color: var(--secondary);
+  border-radius: 16px; /* This creates the "pill" shape */
+
+  /* Typography */
+  color: var(--primary);
+  font-family: "Lexend", system-ui, sans-serif;
+  font-size: 0.85rem;
+}

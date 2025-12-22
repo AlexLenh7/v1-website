@@ -1,0 +1,48 @@
+.footer-container {
+  width: 100%; /* Take up full width of the parent column */
+  padding-top: 2rem;
+  display: block;
+  justify-content: center; /* Centers the 'footer-content' horizontally */
+  color: var(--secondary-text);
+}
+
+.footer-content {
+  display: block;
+  flex-direction: column; /* Stack icons on top of text */
+  align-items: center; /* This is the magic: centers children horizontally */
+  gap: 0.7rem; /* Controlled spacing between icons and text */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Centers icons within the row */
+  gap: 1rem; /* Spacing between individual icons */
+}
+
+.social-links a {
+  display: flex; /* Makes the anchor a box for the icon */
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: var(--secondary-text);
+}
+
+.social-links a svg {
+  display: block;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  transform: translateY(-5px);
+}
+
+.copyright-text {
+  font-size: 0.8rem;
+  display: inline-flex; /* Align icon and text in one line */
+  align-items: center; /* Centers the copyright icon vertically with text */
+  line-height: 1;
+  margin-top: 1rem;
+}
+
+.copyright-text svg {
+  font-size: 1rem;
+  margin-right: 5px;
+}

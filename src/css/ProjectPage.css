@@ -1,0 +1,25 @@
+/* ProjectPage.css */
+
+.project-page-title {
+  display: flex;
+  align-items: left;
+  margin-left: 1rem;
+  font-size: 700;
+  line-height: 1;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Keeps content aligned to the right */
+  text-align: left; /* Ensures text within cards is right-aligned */
+  width: 100%;
+
+  /* Internal Scrolling Logic */
+  height: auto;
+  overflow-y: visible;
+  gap: 1rem;
+}

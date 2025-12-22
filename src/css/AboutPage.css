@@ -1,0 +1,10 @@
+.about-page {
+  height: 100%;
+  width: 100%;
+}
+
+.about-page p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: var(--secondary-text);
+}

@@ -1,0 +1,67 @@
+/* Nav.css */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links a {
+  margin-bottom: 1rem;
+}
+
+.side-nav {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-text);
+  transition: all 0.3s ease;
+  padding-left: 0;
+  /* Use inline-block so the anchor follows text flow but supports padding */
+  display: inline-block;
+  line-height: 0.8;
+  display: block;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.nav-indicator {
+  /* This is the key: inline-flex keeps it on the same line as text */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Aligns the icon's 'box' to the middle of the text line */
+  vertical-align: middle;
+
+  /* Animation logic */
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease, margin-right 0.3s ease;
+}
+
+.nav-indicator.visible {
+  width: 1.5rem;
+  opacity: 1;
+  margin-right: 4px;
+}
+
+/* Material UI Icons need this to stop acting like text baseline characters */
+.nav-indicator svg {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.link-text {
+  /* Aligns the text's 'box' to the middle of the icon line */
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,39 @@
+/* LandingPage.css */
+
+.welcome-text {
+  /* This forces the container to be only as wide as the 'Name' text */
+  width: min-content;
+  /* Prevents the container from becoming a tiny sliver on mobile */
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.welcome-text * {
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+  width: fit-content;
+  line-height: 0.8; /* controls vertical space around text */
+  white-space: nowrap;
+}
+
+.welcome-text > h2 {
+  font-size: 1.25rem;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.summary {
+  max-width: 23rem;
+  line-height: 1.5; /* Increased for readability when it wraps */
+  color: var(--secondary-text);
+  margin-top: -0.4rem;
+}
