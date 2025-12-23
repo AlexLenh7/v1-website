@@ -1,6 +1,6 @@
-/* ProjectPage.css */
+/* ExperiencePage.css */
 
-.project-page-title {
+.exp-page-title {
   display: flex;
   font-weight: 500;
   line-height: 1;
@@ -8,7 +8,7 @@
   margin-top: 3.1rem;
 }
 
-.project-page {
+.exp-page {
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* Keeps content aligned to the right */

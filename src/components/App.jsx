@@ -5,11 +5,16 @@ import Nav from "./Nav";
 import AboutPage from "./AboutPage";
 import ProjectPage from "./ProjectPage";
 import { useState } from "react";
+import ExperiencePage from "./ExperiencePage";
+// import Iridescence from './BackgroundEffect';
+import Aurora from "./BackgroundEffect";
 
 function App() {
-  const [activeTab, setActiveTab] = useState("about");
+  const [activeTab, setActiveTab] = useState("#AboutPage");
   return (
     <div className="app-container">
+      {/* <Iridescence color={[0.3, 0.3, 0.9]} mouseReact={true} amplitude={0.1} speed={1.0} /> */}
+      <Aurora colorStops={["#69e8ff", "#e08aff", "#227ffa"]} blend={10} amplitude={1} speed={0.5} />{" "}
       <header className="static-left-side">
         <div className="left-side">
           {/* Group the top elements together */}
@@ -34,11 +39,15 @@ function App() {
       </header>
       <main className="dynamic-right-side">
         {activeTab === "#AboutPage" && (
-          <div id="AboutPage">
+          <div id="#AboutPage">
             <AboutPage summary="Detail-oriented developer focused on clean UI." />
           </div>
         )}
-        {activeTab === "#ExperiencePage" && <div id="ExperiencePage"></div>}
+        {activeTab === "#ExperiencePage" && (
+          <div id="ExperiencePage">
+            <ExperiencePage />
+          </div>
+        )}
         {activeTab === "#ProjectPage" && (
           <div id="ProjectPage">
             <ProjectPage />

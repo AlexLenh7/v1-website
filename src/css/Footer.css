@@ -4,13 +4,15 @@
   display: block;
   justify-content: center; /* Centers the 'footer-content' horizontally */
   color: var(--secondary-text);
+  padding-bottom: 0;
+  height: fit-content;
 }
 
 .footer-content {
-  display: block;
+  display: flex;
   flex-direction: column; /* Stack icons on top of text */
   align-items: center; /* This is the magic: centers children horizontally */
-  gap: 0.7rem; /* Controlled spacing between icons and text */
+  height: fit-content;
 }
 
 .social-links {

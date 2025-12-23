@@ -1,15 +1,15 @@
 /* index.css */
 :root {
   color-scheme: dark !important;
-  --text: #a3badb;
-  --secondary-text: #a9a297;
-  --background: #0f121e;
-  --secondary-background: #171c2e;
+  --text: #c4d2e5;
+  --secondary-text: #7f8793;
+  --background: #0f121ec8;
+  --secondary-background: #171c2e6f;
   --primary: #227ffa;
   --secondary: #042046;
   --accent: #9798a99e;
   --nav-height: 80px;
-  --box-outline: #0a0c14ee;
+  --box-outline: #0a0c14be;
 }
 
 * {

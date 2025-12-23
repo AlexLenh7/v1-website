@@ -1,4 +1,4 @@
-.project {
+.experience {
   position: relative; /* Anchor for the absolute layer */
   display: flex;
   align-items: flex-start;
@@ -8,8 +8,7 @@
   margin-top: 2rem;
 }
 
-/* This is the secret layer */
-.project-hover-layer {
+.exp-hover-layer {
   position: absolute;
   /* Negative inset creates the 'breathing room' outside the content */
   top: -1rem;
@@ -25,32 +24,29 @@
 }
 
 /* When the PARENT (.project) is hovered, change the LAYER */
-.project:hover .project-hover-layer {
+.experience:hover .exp-hover-layer {
   background-color: var(--secondary-background);
   box-shadow: 0px 0px 3px var(--primary);
 }
 
-.project-img,
-.project-content {
+.exp-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   position: relative;
   z-index: 10;
 }
 
-.project-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.project-title {
+.exp-title {
   align-items: baseline;
   color: var(--text);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1;
+  margin: 0;
 }
 
-.project-date {
+.exp-date {
   color: var(--accent);
   font-size: 0.8rem;
   align-items: center;
@@ -59,16 +55,7 @@
   line-height: 1;
 }
 
-.project-img {
-  display: block;
-  height: auto;
-  width: 20%;
-  border-radius: 16px;
-  border: 2px, solid, var(--accent);
-  object-fit: cover;
-}
-
-.project-description {
+.exp-description {
   margin-top: 0.2rem;
   line-height: 1.5;
   color: var(--secondary-text);
@@ -76,18 +63,12 @@
 }
 
 /* 1. Change title color on parent hover */
-.project:hover .project-title {
+.experience:hover .exp-title {
   color: var(--primary); /* Replace with your desired highlight color */
 }
 
-/* 2. Change image border color on parent hover */
-.project:hover .project-img {
-  border-color: var(--primary); /* Changes the border to your highlight color */
-}
-
 /* 3. Smooth the transitions */
-.project-title,
-.project-img {
+.exp-title {
   transition: all 0.3s ease;
 }
 

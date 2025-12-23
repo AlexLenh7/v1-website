@@ -5,6 +5,7 @@ function CreateProject(props) {
   const individualtags = props.tags.split(",").map((tag) => tag.trim());
   return (
     <div className="project">
+      <div className="project-hover-layer"></div>
       <img className="project-img" src={props.src} alt={props.title} />
       <div className="project-content">
         <h1 className="project-title">{props.title}</h1>

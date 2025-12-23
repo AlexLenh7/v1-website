@@ -3,7 +3,9 @@
 .app-container {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-y: visible;
+  background-color: var(--background);
 }
 
 .frame-overlay {
@@ -22,9 +24,9 @@
 
 .static-left-side {
   width: 50vw;
-  height: 100%;
+  height: 100vh;
   top: 0;
-  background-color: var(--background);
+  left: 0;
   position: sticky;
 
   display: flex;
@@ -32,7 +34,6 @@
   justify-content: center;
   margin-left: 10rem;
   padding: 7rem 2rem;
-  overflow: hidden;
 }
 
 .static-left-side > div {
@@ -51,17 +52,19 @@
 }
 
 #nav {
-  height: fit-content;
+  display: block;
 }
 
 .dynamic-right-side {
-  flex: 0 0 45%;
+  flex-grow: 1;
   width: 50%;
+  min-height: 100vh;
   box-sizing: border-box;
+
   padding: 7rem 2rem;
   margin-right: 10rem;
 
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  overflow: visible;
 }
