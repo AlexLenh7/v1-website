@@ -3,8 +3,34 @@
   width: 100%;
 }
 
+.link-styles {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.about-page > h1 {
+  display: flex;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.25rem;
+  margin-top: 3.1rem;
+}
+
 .about-page p {
+  margin-top: 2rem;
   line-height: 1.5;
-  margin-bottom: 1rem;
   color: var(--secondary-text);
+}
+
+.about-desc {
+  margin-top: 2rem;
+}
+
+.about-skills {
+  margin-top: 1rem;
+}
+
+.about-skills > * {
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
 }

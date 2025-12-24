@@ -1,15 +1,15 @@
 import Tags from "./Tags";
 import "../css/CreateExperience.css";
 
-function CreateExperience(props) {
-  const individualtags = props.tags.split(",").map((tag) => tag.trim());
+function CreateExperience({ title, date, description, tags }) {
+  const individualtags = tags.split(",").map((tag) => tag.trim());
   return (
     <div className="experience">
       <div className="exp-hover-layer"></div>
       <div className="exp-content">
-        <h1 className="exp-title">{props.title}</h1>
-        <span className="exp-date">{props.date}</span>
-        <p className="exp-description">{props.description}</p>
+        <h1 className="exp-title">{title}</h1>
+        <span className="exp-date">{date}</span>
+        <p className="exp-description">{description}</p>
 
         <div className="tag-container">
           {individualtags.map((tagName, index) => {

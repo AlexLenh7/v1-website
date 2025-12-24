@@ -21,6 +21,10 @@
   }
 }
 
+html {
+  scroll-padding-block-start: 7rem;
+}
+
 body {
   background-color: var(--background);
   color: var(--text);

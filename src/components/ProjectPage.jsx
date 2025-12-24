@@ -16,6 +16,7 @@ function ProjectPage() {
             description={entry.description}
             date={entry.date}
             tags={entry.tags}
+            link={entry.link}
           />
         ))}
       </div>

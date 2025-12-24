@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import AboutPage from "./AboutPage";
 import ProjectPage from "./ProjectPage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ExperiencePage from "./ExperiencePage";
 // import Iridescence from './BackgroundEffect';
 import Aurora from "./BackgroundEffect";
@@ -39,7 +39,7 @@ function App() {
       </header>
       <main className="dynamic-right-side">
         {activeTab === "#AboutPage" && (
-          <div id="#AboutPage">
+          <div id="AboutPage">
             <AboutPage summary="Detail-oriented developer focused on clean UI." />
           </div>
         )}

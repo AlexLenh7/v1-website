@@ -8,25 +8,44 @@
   margin-top: 2rem;
 }
 
+.project-link svg {
+  display: inline;
+  vertical-align: middle;
+  font-size: 1rem;
+  margin-left: 0.25rem;
+}
+
+.project-page .project:hover svg {
+  transform: translate(5px, -5px);
+}
+
+.project-page:hover .project {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.project-page .project:hover {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.02);
+}
+
 /* This is the secret layer */
 .project-hover-layer {
   position: absolute;
-  /* Negative inset creates the 'breathing room' outside the content */
   top: -1rem;
   bottom: -1rem;
   left: -1rem;
   right: -1rem;
 
-  z-index: 0; /* Stay behind the text */
+  z-index: 999;
   border-radius: 12px;
   background-color: transparent;
   transition: all 0.3s ease;
-  pointer-events: none; /* Mouse goes 'through' this to hit the text/links */
+  pointer-events: auto;
 }
 
-/* When the PARENT (.project) is hovered, change the LAYER */
 .project:hover .project-hover-layer {
-  background-color: var(--secondary-background);
   box-shadow: 0px 0px 3px var(--primary);
 }
 
