@@ -81,7 +81,8 @@
 .project-img {
   display: block;
   height: auto;
-  width: 20%;
+  width: 10rem;
+  height: 6rem;
   border-radius: 16px;
   border: 2px, solid, var(--accent);
   object-fit: cover;

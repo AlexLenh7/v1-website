@@ -1,13 +1,17 @@
 import Tags from "./Tags";
 import "../css/CreateExperience.css";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
-function CreateExperience({ title, date, description, tags }) {
+function CreateExperience({ tags, link, title, date, description }) {
   const individualtags = tags.split(",").map((tag) => tag.trim());
   return (
     <div className="experience">
-      <div className="exp-hover-layer"></div>
+      <a className="exp-hover-layer" href={link} target="_blank"></a>
       <div className="exp-content">
-        <h1 className="exp-title">{title}</h1>
+        <h1 className="exp-title">
+          {title}
+          <span className="exp-link">{link && <ArrowOutwardIcon />}</span>
+        </h1>
         <span className="exp-date">{date}</span>
         <p className="exp-description">{description}</p>
 

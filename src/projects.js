@@ -49,7 +49,7 @@ const Projects = [
     description:
       "Engineered a single-player Blackjack game in C++ using object-oriented principles, leveraging inheritance and polymorphism to ensure a highly maintainable codebase. By implementing a modular design with separate headers and implementations, I reduced code redundancy by 25% and significantly accelerated development cycles.",
     tags: "C++",
-    date: "May 2025 - Aug 2025",
+    date: "Mar 2025 - May 2025",
     link: "https://github.com/AlexLenh7/Blackjack-Project",
   },
 ];

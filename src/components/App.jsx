@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Nav from "./Nav";
 import AboutPage from "./AboutPage";
 import ProjectPage from "./ProjectPage";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import ExperiencePage from "./ExperiencePage";
 // import Iridescence from './BackgroundEffect';
 import Aurora from "./BackgroundEffect";
@@ -23,7 +23,7 @@ function App() {
               <LandingPage
                 name="Alex Lenh"
                 description="Designer and Developer"
-                summary="Aspiring Junior Developer building perfect web experiences focused on backend systems"
+                summary="Software Engineer specializing in building scalable, efficient backend systems and functional web applications."
               />
             </div>
             <div id="nav">

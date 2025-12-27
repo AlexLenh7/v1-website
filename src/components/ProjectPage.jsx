@@ -5,7 +5,7 @@ import "../css/ProjectPage.css";
 // Dynamically adds from project
 function ProjectPage() {
   return (
-    <>
+    <div className="project-page-container">
       <h1 className="project-page-title">Past Projects</h1>
       <div className="project-page">
         {projects.map((entry) => (
@@ -20,7 +20,7 @@ function ProjectPage() {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

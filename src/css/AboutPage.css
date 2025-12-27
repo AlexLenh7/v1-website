@@ -1,14 +1,23 @@
-.about-page {
-  height: 100%;
-  width: 100%;
+.about-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: calc(100vh - 14rem);
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.link-styles {
+.about-page-container a {
   text-decoration: none;
+  color: var(--text);
+}
+
+.about-page-container a:hover {
   color: var(--primary);
 }
 
-.about-page > h1 {
+.about-content > h1 {
   display: flex;
   font-weight: 500;
   line-height: 1;
@@ -16,21 +25,148 @@
   margin-top: 3.1rem;
 }
 
-.about-page p {
-  margin-top: 2rem;
-  line-height: 1.5;
+.about-page-container p {
+  margin-top: 1.25rem;
+  line-height: 1.75;
   color: var(--secondary-text);
 }
 
-.about-desc {
-  margin-top: 2rem;
+.about-content {
+  flex-grow: 1;
 }
 
-.about-skills {
+.about-footer {
+  line-height: 1;
+  font-size: 0.8rem;
+}
+
+.about-greet svg {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.about-greet {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.25rem;
+}
+
+.about-tech-stack ul {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0rem, 9rem));
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-tech-stack {
+  color: var(--primary);
+}
+
+.about-tech-stack li {
+  display: flex;
+  align-items: center;
+  line-height: 1.75rem;
+}
+
+.about-tech-stack li svg {
+  font-size: 1rem;
+}
+
+.about-tech-stack p {
+  margin-top: 0.5rem;
+  color: var(--text);
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  10% {
+    transform: rotate(-14deg) scale(1.3);
+  }
+  20% {
+    transform: rotate(8deg) scale(1.4);
+  }
+  30% {
+    transform: rotate(-14deg) scale(1.4);
+  }
+  40% {
+    transform: rotate(4deg) scale(1.4);
+  }
+  50% {
+    transform: rotate(-10deg) scale(1.4);
+  }
+  60% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.about-wave {
+  animation: wave 2.1s 0.6s;
+  transform-origin: bottom left;
+}
+
+.about-employment {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 0;
+  font-size: 1rem;
+  color: var(--primary);
   margin-top: 1rem;
 }
 
-.about-skills > * {
-  padding-bottom: 0.5rem;
-  padding-right: 1rem;
+.about-employment svg {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.about-location {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 0;
+  font-size: 1rem;
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+.about-location svg {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.about-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  border: solid 2px var(--primary);
+  object-fit: cover;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: row; /* Forces side-by-side layout */
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-p1 {
+  flex: 1;
+}
+
+.about-github {
+  width: fit-content;
+  max-width: fit-content; /* Adjust based on your design */
+  overflow-x: hidden; /* Adds a scrollbar on mobile instead of stretching the page */
+  margin-top: 1rem;
+  align-self: center;
 }
