@@ -1,11 +1,15 @@
 .project {
-  position: relative; /* Anchor for the absolute layer */
+  position: relative;
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  width: fit-content;
-  transition: all 0.3s ease;
-  margin-top: 2rem;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-link svg {
@@ -15,38 +19,37 @@
   margin-left: 0.25rem;
 }
 
-.project-page .project:hover svg {
+.project:hover svg {
   transform: translate(5px, -5px);
 }
 
-.project-page:hover .project {
-  opacity: 0.5;
-  transition: all 0.3s ease;
+.project-img {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0px 7px var(--primary);
 }
 
-.project-page .project:hover {
-  opacity: 1;
-  filter: blur(0px);
-  transform: scale(1.02);
+.project:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
 }
 
-/* This is the secret layer */
 .project-hover-layer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: -1rem;
-  bottom: -1rem;
-  left: -1rem;
-  right: -1rem;
-
   z-index: 999;
-  border-radius: 12px;
   background-color: transparent;
-  transition: all 0.3s ease;
   pointer-events: auto;
-}
-
-.project:hover .project-hover-layer {
-  box-shadow: 0px 0px 3px var(--primary);
 }
 
 .project-img,
@@ -67,6 +70,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1;
+  margin-top: 1rem;
 }
 
 .project-date {
@@ -76,16 +80,6 @@
   justify-content: center;
   vertical-align: center;
   line-height: 1;
-}
-
-.project-img {
-  display: block;
-  height: auto;
-  width: 10rem;
-  height: 6rem;
-  border-radius: 16px;
-  border: 2px, solid, var(--accent);
-  object-fit: cover;
 }
 
 .project-description {

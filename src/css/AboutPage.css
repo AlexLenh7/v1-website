@@ -1,19 +1,9 @@
-.about-page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  min-height: calc(100vh - 14rem);
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.about-page-container a {
+.link-styles {
   text-decoration: none;
   color: var(--text);
 }
 
-.about-page-container a:hover {
+.link-styles:hover {
   color: var(--primary);
 }
 
@@ -25,14 +15,10 @@
   margin-top: 3.1rem;
 }
 
-.about-page-container p {
+.about-p1 {
   margin-top: 1.25rem;
   line-height: 1.75;
   color: var(--secondary-text);
-}
-
-.about-content {
-  flex-grow: 1;
 }
 
 .about-footer {
@@ -56,13 +42,13 @@
 
 .about-tech-stack ul {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0rem, 9rem));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   flex-direction: column;
   align-items: flex-start;
 }
 
 .about-tech-stack {
-  color: var(--primary);
+  color: var(--text);
 }
 
 .about-tech-stack li {
@@ -75,7 +61,7 @@
   font-size: 1rem;
 }
 
-.about-tech-stack p {
+.about-tech-stack div {
   margin-top: 0.5rem;
   color: var(--text);
 }
@@ -161,12 +147,30 @@
 
 .about-p1 {
   flex: 1;
+  display: block; /* Overrides any default div behavior if necessary */
 }
 
 .about-github {
-  width: fit-content;
-  max-width: fit-content; /* Adjust based on your design */
-  overflow-x: hidden; /* Adds a scrollbar on mobile instead of stretching the page */
-  margin-top: 1rem;
-  align-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.about-github > div {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.about-github svg {
+  /* This ensures the calendar shrinks to fit the container width */
+  max-width: 100%;
+  height: auto;
+  /* Optional: if the library renders fixed widths, force scaling */
+  transform-origin: center top;
 }

@@ -1,0 +1,37 @@
+import CreateProject from "./CreateProject";
+import projects from "../projects";
+import "../css/FeaturedProjects.css";
+import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
+
+function FeaturedProjects() {
+  return (
+    <div className="featured-container">
+      <div className="featured-title">
+        Featured Projects{" "}
+        <a className="featured-more" href="#ProjectPage">
+          view more
+          <ArrowRightOutlinedIcon />
+        </a>
+      </div>
+      <div className="container-border">
+        <div className="featured-wrapper">
+          {projects
+            .filter((entry) => entry.id === 1 || entry.id === 3)
+            .map((entry) => (
+              <CreateProject
+                key={entry.id}
+                title={entry.title}
+                src={entry.img}
+                description={entry.description}
+                date={entry.date}
+                tags={entry.tags}
+                link={entry.link}
+              />
+            ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default FeaturedProjects;

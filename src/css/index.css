@@ -23,6 +23,7 @@
 
 html {
   scroll-padding-block-start: 7rem;
+  overflow-x: hidden;
 }
 
 body {

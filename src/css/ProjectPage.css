@@ -6,17 +6,27 @@
   line-height: 1;
   font-size: 1.25rem;
   margin-top: 3.1rem;
+  margin-bottom: 2rem;
 }
 
 .project-page {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; /* Keeps content aligned to the right */
-  text-align: left; /* Ensures text within cards is right-aligned */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
 
   /* Internal Scrolling Logic */
   height: auto;
   overflow-y: visible;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.project-page:hover .project {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.project-page .project:hover {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.02);
 }

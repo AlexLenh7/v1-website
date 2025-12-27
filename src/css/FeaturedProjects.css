@@ -1,0 +1,44 @@
+.featured-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+
+  /* Internal Scrolling Logic */
+  height: auto;
+  overflow-y: visible;
+  gap: 2rem;
+}
+
+.featured-title {
+  display: flex;
+  font-weight: 500;
+  line-height: 1;
+  font-size: 1.25rem;
+  margin-top: 3.1rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.container-border {
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.featured-more {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--secondary-text);
+  height: fit-content;
+  text-decoration: none;
+}
+
+.featured-more svg {
+  margin-top: 0.25rem;
+}
+
+.featured-more:hover {
+  color: var(--primary);
+}

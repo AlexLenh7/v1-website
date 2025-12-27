@@ -3,12 +3,21 @@ import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
-import ProfilePic from "../assets/Headshot.jpg";
 import Profile from "../assets/Profile.png";
 import { GitHubCalendar } from "react-github-calendar";
+import FeaturedProjects from "./FeaturedProjects";
 
 function AboutPage() {
   const currYear = new Date().getFullYear();
+  const githubTheme = {
+    dark: [
+      "#272731ff", // Level 0: Empty/Background
+      "#193458", // Level 1: Faint Blue
+      "#1c4d8e", // Level 2: Dim Blue
+      "#1f66c4", // Level 3: Bright Blue
+      "#227ffa", // Level 4: Primary Blue
+    ],
+  };
   return (
     <div className="about-page-container">
       <div className="about-content">
@@ -36,7 +45,7 @@ function AboutPage() {
               </div>
             </div>
           </div>
-          <p className="about-p1">
+          <div className="about-p1">
             Recent Computer Science graduate at{" "}
             <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
               San Diego State University
@@ -44,60 +53,26 @@ function AboutPage() {
             with a passion for building functional, high-quality applications. During my time at SDSU, I obtained a
             strong foundation in CS while being highly adaptable at learning in a fast pace enviornment. I have a strong
             passion for web and software development through various projects I have built, including this portfolio.
-            <div className="about-tech-stack">
-              <p>Tools I've been using recently:</p>
-              <ul>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  Javascript
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  React
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  Node.js
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  HTML
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  CSS
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  Express
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  Postgres
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  REST API
-                </li>
-                <li>
-                  <ArrowRightOutlinedIcon />
-                  jQuery
-                </li>
-              </ul>
-            </div>
-          </p>
+          </div>
+        </div>
+        <div>
+          <FeaturedProjects />
         </div>
         <div className="about-github">
           <GitHubCalendar
             username="AlexLenh7"
             year={currYear}
-            blockSize={10.9}
+            blockSize={12}
             blockMargin={3}
             fontSize={12}
             loading={false}
+            theme={githubTheme}
             style={{
               width: "100%",
-              padding: "0rem",
+              height: "auto",
+              maxWidth: "100%",
+              display: "block",
+              padding: "1.5rem",
             }}
           />
         </div>
