@@ -14,12 +14,14 @@ function CreateProject({ tags, link, title, src, date, description }) {
           <span className="project-link">{link && <ArrowOutwardIcon />}</span>
         </h1>
         <span className="project-date">{date}</span>
-        <p className="project-description">{description}</p>
+        <div className="description-tag-wrapper">
+          <p className="project-description">{description}</p>
 
-        <div className="tag-container">
-          {individualtags.map((tagName, index) => {
-            return <Tags key={index} name={tagName} />;
-          })}
+          <div className="tag-container">
+            {individualtags.map((tagName, index) => {
+              return <Tags key={index} name={tagName} />;
+            })}
+          </div>
         </div>
       </div>
     </div>

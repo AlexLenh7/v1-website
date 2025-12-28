@@ -1,24 +1,28 @@
 /* index.css */
 :root {
   color-scheme: dark !important;
-  --text: #c4d2e5;
-  --secondary-text: #7f8793;
-  --background: #0f121ec8;
-  --secondary-background: #171c2e6f;
+  --text: #d6dee8;
+  --secondary-text: #929ba8;
+  --background: #0f121edb;
+  --secondary-background: #171c2e74;
   --primary: #227ffa;
   --secondary: #042046;
   --accent: #9798a99e;
-  --nav-height: 80px;
   --box-outline: #0a0c14be;
 }
 
 * {
   margin: 0;
-  font-family: "Lexend", system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   box-sizing: border-box;
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", system-ui, sans-serif;
 }
 
 html {

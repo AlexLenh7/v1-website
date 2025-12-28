@@ -59,7 +59,7 @@
 .exp-title {
   align-items: baseline;
   color: var(--text);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
   line-height: 1;
   margin: 0;
@@ -78,7 +78,7 @@
   margin-top: 0.2rem;
   line-height: 1.5;
   color: var(--secondary-text);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* 1. Change title color on parent hover */

@@ -1,9 +1,8 @@
 import "../css/AboutPage.css";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import WavingHandIcon from "@mui/icons-material/WavingHand";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
-import Profile from "../assets/Profile.png";
+import Profile from "../assets/Profile.jpg";
 import { GitHubCalendar } from "react-github-calendar";
 import FeaturedProjects from "./FeaturedProjects";
 
@@ -21,15 +20,35 @@ function AboutPage() {
   return (
     <div className="about-page-container">
       <div className="about-content">
-        <h1 className="about-greet">
-          Hello! I'm Alex{" "}
-          <span>
-            <WavingHandIcon className="about-wave" />
-          </span>
-        </h1>
         <div className="about-content-wrapper">
           <div className="about-profile-wrapper">
             <img src={Profile} className="about-img" />
+          </div>
+          <div className="about-p">
+            <div className="about-p1">
+              Recent Computer Science graduate at{" "}
+              <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
+                San Diego State University
+              </a>{" "}
+              with a passion for building functional, high-quality applications. During my time at SDSU, I obtained a
+              strong foundation in CS while being highly adaptable at learning in a fast pace enviornment. I have a
+              strong passion for web and software development through various projects I have built.
+            </div>
+            <div className="about-p2">
+              Some of my notable projects include building a{" "}
+              <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
+                Discord Bot
+              </a>
+              {", "}
+              to improve and automate my daily workflow, and a{" "}
+              <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
+                Chrome Extension
+              </a>
+              {", "}
+              to reduce constant distractions and improve focus. My work currently focuses on backend development while
+              exploring the frontend.
+            </div>
+            <div className="about-p2">Outside of software, I enjoy playing games, watching anime, and reading.</div>
             <div className="about-status">
               <div className="about-location">
                 <span>
@@ -44,15 +63,6 @@ function AboutPage() {
                 Open to work!
               </div>
             </div>
-          </div>
-          <div className="about-p1">
-            Recent Computer Science graduate at{" "}
-            <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
-              San Diego State University
-            </a>{" "}
-            with a passion for building functional, high-quality applications. During my time at SDSU, I obtained a
-            strong foundation in CS while being highly adaptable at learning in a fast pace enviornment. I have a strong
-            passion for web and software development through various projects I have built, including this portfolio.
           </div>
         </div>
         <div>

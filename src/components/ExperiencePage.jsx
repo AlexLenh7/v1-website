@@ -8,7 +8,6 @@ import Tags from "./Tags";
 function ExperiencePage() {
   return (
     <div className="exp-page-container">
-      <h1 className="exp-page-title">Work Experience</h1>
       <p className="exp-disclaimer">
         While I do not have any formal experience working currently, I am looking for junior or entry level
         opportunities. Here are some of my most relevant projects that best describes my current experience:

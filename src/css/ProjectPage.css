@@ -1,12 +1,7 @@
 /* ProjectPage.css */
 
-.project-page-title {
-  display: flex;
-  font-weight: 500;
-  line-height: 1;
-  font-size: 1.25rem;
-  margin-top: 3.1rem;
-  margin-bottom: 2rem;
+.project-page-container {
+  margin-top: 5rem;
 }
 
 .project-page {

@@ -9,7 +9,7 @@ const experience = [
     link: "https://github.com/AlexLenh7/Discord-Bot",
   },
   {
-    id: 1,
+    id: 2,
     title: "Full-Stack Web Applications",
     description:
       "Built multiple full-stack applications using ReactJS and Express, leveraging reusable component architectures and RESTful APIs for seamless client-server communication. I optimized backend performance through PostgreSQL database management and enhanced frontend interactivity using EJS and jQuery for responsive, server-rendered experiences.",

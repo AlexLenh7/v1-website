@@ -1,5 +1,9 @@
 /* ExperiencePage.css */
 
+.exp-page-container {
+  margin-top: 5rem;
+}
+
 .exp-page-title {
   display: flex;
   font-weight: 500;

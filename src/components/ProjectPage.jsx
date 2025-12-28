@@ -6,7 +6,6 @@ import "../css/ProjectPage.css";
 function ProjectPage() {
   return (
     <div className="project-page-container">
-      <h1 className="project-page-title">Past Projects</h1>
       <div className="project-page">
         {projects.map((entry) => (
           <CreateProject
