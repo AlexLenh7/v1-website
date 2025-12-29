@@ -6,9 +6,9 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 function FeaturedProjects() {
   return (
     <div className="featured-container">
-      <div className="featured-title">
+      <div className="featured-title stagger-item delay-5">
         Featured Projects{" "}
-        <a className="featured-more" href="#ProjectPage">
+        <a className="featured-more link-styles" href="#ProjectPage">
           view more
           <ArrowRightOutlinedIcon />
         </a>

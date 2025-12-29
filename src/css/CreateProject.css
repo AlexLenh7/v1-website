@@ -1,3 +1,7 @@
+.project-wrapper {
+  width: 100%;
+  display: flex;
+}
 .project {
   position: relative;
   display: flex;

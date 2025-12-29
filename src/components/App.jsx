@@ -38,13 +38,15 @@ function App() {
   return (
     <div className="app-container">
       {/* <Aurora colorStops={["#69e8ff", "#e08aff", "#227ffa"]} blend={10} amplitude={1} speed={0.5} />{" "} */}
+      <div className="frame-overlay"></div>
       <div className="content-wrapper">
         <header className="static-left-side">
           <div className="left-side">
             {/* Group the top elements together */}
             <div className="top-group">
-              <div id="landing-page">
+              <div id="landing-page" className="page-transition">
                 <LandingPage
+                  key={activeTab}
                   name={currentIntro.name}
                   description={currentIntro.description}
                   summary={currentIntro.summary}
@@ -63,23 +65,23 @@ function App() {
         </header>
         <main className="dynamic-right-side">
           {activeTab === "#AboutPage" && (
-            <div id="AboutPage">
-              <AboutPage summary="Detail-oriented developer focused on clean UI." />
+            <div id="AboutPage" className="page-transition">
+              <AboutPage />
             </div>
           )}
           {activeTab === "#ExperiencePage" && (
-            <div id="ExperiencePage">
+            <div id="ExperiencePage" className="page-transition">
               <ExperiencePage />
             </div>
           )}
           {activeTab === "#ProjectPage" && (
-            <div id="ProjectPage">
+            <div id="ProjectPage" className="page-transition">
               <ProjectPage />
             </div>
           )}
         </main>
       </div>
-      {/* <div className="frame-overlay"></div> */}
+      <div className="frame-outline"></div>
     </div>
   );
 }

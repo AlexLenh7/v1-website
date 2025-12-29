@@ -22,10 +22,10 @@ function AboutPage() {
       <div className="about-content">
         <div className="about-content-wrapper">
           <div className="about-profile-wrapper">
-            <img src={Profile} className="about-img" />
+            <img src={Profile} className="about-img stagger-item delay-1" />
           </div>
           <div className="about-p">
-            <div className="about-p1">
+            <div className="about-p1 stagger-item delay-1">
               Recent Computer Science graduate at{" "}
               <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
                 San Diego State University
@@ -34,7 +34,7 @@ function AboutPage() {
               strong foundation in CS while being highly adaptable at learning in a fast pace enviornment. I have a
               strong passion for web and software development through various projects I have built.
             </div>
-            <div className="about-p2">
+            <div className="about-p2 stagger-item delay-2">
               Some of my notable projects include building a{" "}
               <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
                 Discord Bot
@@ -48,27 +48,30 @@ function AboutPage() {
               to reduce constant distractions and improve focus. My work currently focuses on backend development while
               exploring the frontend.
             </div>
-            <div className="about-p2">Outside of software, I enjoy playing games, watching anime, and reading.</div>
-            <div className="about-status">
-              <div className="about-location">
-                <span>
-                  <FmdGoodOutlinedIcon />
-                </span>
-                San Diego, CA
-              </div>
-              <div className="about-employment">
-                <span>
-                  <WorkOutlineOutlinedIcon />
-                </span>
-                Open to work!
-              </div>
+            <div className="about-p2 stagger-item delay-3">
+              Outside of software, I enjoy playing games, watching anime, and reading.
             </div>
           </div>
+        </div>
+        <div className="about-status stagger-item delay-4">
+          <div className="about-location">
+            <span>
+              <FmdGoodOutlinedIcon />
+            </span>
+            San Diego, CA
+          </div>
+          <div className="about-employment">
+            <span>
+              <WorkOutlineOutlinedIcon />
+            </span>
+            Seeking
+          </div>
+          <div className="about-socials"></div>
         </div>
         <div>
           <FeaturedProjects />
         </div>
-        <div className="about-github">
+        <div className="about-github stagger-item delay-1">
           <GitHubCalendar
             username="AlexLenh7"
             year={currYear}
@@ -90,23 +93,23 @@ function AboutPage() {
       <div className="about-footer-wrapper">
         <p className="about-footer">
           Developed and designed in{" "}
-          <a href="https://code.visualstudio.com/" target="_blank">
+          <a href="https://code.visualstudio.com/" target="_blank" className="link-styles">
             Visual Studio Code
           </a>
           . Built with the latest{" "}
-          <a href="https://react.dev/" target="_blank">
+          <a href="https://react.dev/" target="_blank" className="link-styles">
             React
           </a>{" "}
           and{" "}
-          <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+          <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" className="link-styles">
             CSS
           </a>{" "}
           on{" "}
-          <a href="https://vite.dev/" target="_blank">
+          <a href="https://vite.dev/" target="_blank" className="link-styles">
             Vite
           </a>
           , deployed with{" "}
-          <a href="https://vercel.com/home" target="_blank">
+          <a href="https://vercel.com/home" target="_blank" className="link-styles">
             Vercel
           </a>
           .

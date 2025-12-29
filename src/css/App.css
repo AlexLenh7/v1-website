@@ -18,21 +18,41 @@
   gap: 8rem;
 }
 
-/* .frame-overlay {
+.frame-overlay {
   position: fixed;
-  top: 4rem;
-  bottom: 4rem;
-  left: 4rem;
-  right: 4rem;
-
-  z-index: -10;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-
-  background-color: rgba(255, 255, 255, 0.09);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  inset: 0;
+  z-index: 10;
   pointer-events: none;
-} */
+  backdrop-filter: blur(5px);
+  background-color: var(--box-outline);
+  padding: 3rem;
+
+  mask: linear-gradient(#000000 0 0) content-box, linear-gradient(#000 0 0);
+
+  mask-composite: exclude;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+
+  -webkit-mask-composite: xor;
+
+  border-radius: var(--window-radius);
+}
+
+.frame-overlay::after {
+  position: absolute;
+  inset: 4rem;
+  border-radius: 16px;
+}
+
+.frame-outline {
+  pointer-events: none;
+  inset: 0;
+  position: fixed;
+  z-index: 10;
+  border: 1px solid #929ba832;
+  border-radius: 1rem;
+  margin: 3rem;
+}
 
 /* 3. Left Side: Adjusting from 50vw to 50% */
 .static-left-side {
@@ -114,4 +134,58 @@
 
 .about-wave svg {
   font-size: 3rem;
+}
+
+.page-transition {
+  opacity: 0;
+  animation: fadeInUp 0.3s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Base class for children that should stagger */
+.stagger-item {
+  opacity: 0; /* Ensures they stay hidden initially */
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Different delay tiers */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+.delay-2 {
+  animation-delay: 0.2s;
+}
+.delay-3 {
+  animation-delay: 0.3s;
+}
+.delay-4 {
+  animation-delay: 0.4s;
+}
+.delay-5 {
+  animation-delay: 0.5s;
+}
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+/* Controls all link styling */
+.link-styles {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.link-styles:hover {
+  color: var(--primary);
+  transition: all 0.3s;
 }

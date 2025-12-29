@@ -25,7 +25,7 @@ function ExperiencePage() {
         ))}
       </div>
       <div className="exp-resume">
-        <a href="google.com" target="_blank">
+        <a href="google.com" target="_blank" className="link-styles">
           View Full Resume
           <ArrowOutwardIcon />
         </a>
