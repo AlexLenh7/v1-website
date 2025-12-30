@@ -1,8 +1,6 @@
 /* LandingPage.css */
 
 .welcome-text {
-  /* This forces the container to be only as wide as the 'Name' text */
-  width: min-content;
   /* Prevents the container from becoming a tiny sliver on mobile */
   min-width: 100%;
   display: flex;
@@ -10,7 +8,7 @@
   align-items: flex-start;
 }
 
-.welcome-text * {
+.welcome-text > * {
   display: block;
 }
 
@@ -23,7 +21,7 @@
   line-height: 1;
   white-space: nowrap;
   letter-spacing: -0.02em;
-  margin-left: -4px;
+  margin-left: -3px;
 }
 
 .name svg {

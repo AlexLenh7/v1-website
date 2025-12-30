@@ -17,7 +17,7 @@ function Nav({ activeTab, setActiveTab }) {
           <li key={item.key}>
             <a
               href={item.href}
-              className={activeTab === item.href ? "active link-styles" : "link-styles"}
+              className={activeTab === item.href ? "nav-text active link-styles" : "link-styles"}
               onClick={() => setActiveTab(item.href)}
             >
               <span className={`nav-indicator ${activeTab === item.href ? "visible" : ""}`}>{item.icon}</span>

@@ -1,9 +1,5 @@
 /* ProjectPage.css */
 
-.project-page-container {
-  margin-top: 5rem;
-}
-
 .project-page {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -12,7 +8,7 @@
   /* Internal Scrolling Logic */
   height: auto;
   overflow-y: visible;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .project-page:hover .project {

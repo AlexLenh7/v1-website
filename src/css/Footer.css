@@ -1,29 +1,30 @@
 .footer-container {
-  width: 100%; /* Take up full width of the parent column */
+  width: 100%;
   padding-top: 2rem;
-  display: block;
-  justify-content: center; /* Centers the 'footer-content' horizontally */
+  display: flex;
   color: var(--secondary-text);
-  padding-bottom: 0;
-  height: fit-content;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column; /* Stack icons on top of text */
-  align-items: center; /* This is the magic: centers children horizontally */
-  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  justify-content: left;
 }
 
 .social-links {
   display: flex;
-  justify-content: center; /* Centers icons within the row */
-  gap: 1rem; /* Spacing between individual icons */
+  justify-content: center;
+  gap: 1rem;
 }
 
 .social-links a {
-  display: flex; /* Makes the anchor a box for the icon */
-  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  display: flex;
+  transition: all 0.3s;
   color: var(--secondary-text);
 }
 
@@ -37,14 +38,28 @@
 }
 
 .copyright-text {
-  font-size: 0.8rem;
-  display: inline-flex; /* Align icon and text in one line */
-  align-items: center; /* Centers the copyright icon vertically with text */
-  line-height: 1;
-  margin-top: 1rem;
+  display: flex;
+  line-height: 0;
+  font-size: 0.75rem;
+  align-items: center;
 }
 
+/* KEEP FONT SIZE AT 1 */
 .copyright-text svg {
   font-size: 1rem;
-  margin-right: 5px;
+  margin-right: 0.25rem;
+}
+
+.about-footer {
+  font-size: 0.75rem;
+  color: var(--secondary-text);
+  max-width: 20rem;
+  opacity: 0.8;
+  line-height: 1.07;
+}
+
+.about-footer a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
 }

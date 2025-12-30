@@ -5,7 +5,7 @@ import "../css/ProjectPage.css";
 // Dynamically adds from project
 function ProjectPage() {
   return (
-    <div className="project-page-container">
+    <div className="project-page-container container-border">
       <div className="project-page">
         {projects.map((entry) => (
           <CreateProject

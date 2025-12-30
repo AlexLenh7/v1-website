@@ -27,6 +27,29 @@ function Footer() {
           Alex Lenh {currYear}
         </p>
       </div>
+      <p className="about-footer">
+        Developed and designed in{" "}
+        <a href="https://code.visualstudio.com/" target="_blank" className="link-styles">
+          Visual Studio Code
+        </a>
+        . Built with{" "}
+        <a href="https://react.dev/" target="_blank" className="link-styles">
+          React
+        </a>{" "}
+        and{" "}
+        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" className="link-styles">
+          CSS
+        </a>{" "}
+        on{" "}
+        <a href="https://vite.dev/" target="_blank" className="link-styles">
+          Vite
+        </a>
+        , deployed with{" "}
+        <a href="https://vercel.com/home" target="_blank" className="link-styles">
+          Vercel
+        </a>
+        .
+      </p>
     </footer>
   );
 }

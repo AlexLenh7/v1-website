@@ -188,3 +188,9 @@
   color: var(--primary);
   transition: all 0.3s;
 }
+
+.primary-color {
+  color: var(--primary);
+  display: inline !important;
+  font-family: "Montserrat";
+}

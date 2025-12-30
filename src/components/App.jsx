@@ -15,11 +15,11 @@ function App() {
     "#AboutPage": {
       name: (
         <>
-          Hi! I'm Alex <WavingHandIcon className="about-wave" />
+          Hi! I'm <span className="primary-color">Alex</span> <WavingHandIcon className="about-wave" />
         </>
       ),
       description: "Designer and Developer",
-      summary: "A little bit about me and what I bring to the table and something else",
+      summary: "A little bit about me, what I do, and to the table and something else",
     },
     "#ExperiencePage": {
       name: "My Journey",

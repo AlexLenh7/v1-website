@@ -19,10 +19,8 @@ ul {
   text-decoration: none;
   color: var(--secondary-text);
   padding-left: 0;
-  /* Use inline-block so the anchor follows text flow but supports padding */
-  display: inline-block;
-  line-height: 0.8;
-  display: block;
+  display: flex;
+  line-height: 1;
 }
 
 .nav-links a.active {
@@ -30,19 +28,13 @@ ul {
 }
 
 .nav-indicator {
-  /* This is the key: inline-flex keeps it on the same line as text */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  /* Aligns the icon's 'box' to the middle of the text line */
-  vertical-align: middle;
-
-  /* Animation logic */
   width: 0;
   opacity: 0;
   overflow: hidden;
-  transition: width 0.3s ease, opacity 0.3s ease, margin-right 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-indicator.visible {
@@ -51,17 +43,16 @@ ul {
   margin-right: 4px;
 }
 
-/* Material UI Icons need this to stop acting like text baseline characters */
 .nav-indicator svg {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .link-text {
-  /* Aligns the text's 'box' to the middle of the icon line */
-  vertical-align: middle;
-  display: inline-block;
-  font-size: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  font-size: 1.25rem;
   font-weight: 500;
   font-family: "Montserrat";
 }

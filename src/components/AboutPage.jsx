@@ -7,6 +7,7 @@ import FeaturedProjects from "./FeaturedProjects";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import TechStack from "./TechStack";
 
 function AboutPage({ setActiveTab }) {
   const currYear = new Date().getFullYear();
@@ -22,25 +23,9 @@ function AboutPage({ setActiveTab }) {
   return (
     <div className="about-page-container">
       <div className="about-content">
-        <div className="about-content-wrapper">
+        <div className="about-content-wrapper container-border">
           <div className="about-profile-wrapper">
             <img src={Profile} className="about-img stagger-item delay-1" />
-            <div className="about-status stagger-item delay-4">
-              <div className="about-status-wrapper">
-                <div className="about-location">
-                  <span>
-                    <FmdGoodOutlinedIcon />
-                  </span>
-                  San Diego, CA
-                </div>
-                <div className="about-employment">
-                  <span>
-                    <WorkOutlineOutlinedIcon />
-                  </span>
-                  Seeking
-                </div>
-              </div>
-            </div>
           </div>
           <div className="about-p">
             <div className="about-p1 stagger-item delay-1">
@@ -69,26 +54,45 @@ function AboutPage({ setActiveTab }) {
             <div className="about-p2 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and graphic design.
             </div>
-            <div className="about-social-wrapper stagger-item delay-4">
-              <a className="about-socials link-styles" href="https://github.com" target="_blank">
+          </div>
+        </div>
+        <div className="about-status-social container-border">
+          <div className="about-status stagger-item delay-4">
+            <div className="about-status-wrapper">
+              <div className="about-location">
                 <span>
-                  <GitHubIcon />
+                  <FmdGoodOutlinedIcon />
                 </span>
-                Github
-              </a>
-              <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
+                San Diego, CA
+              </div>
+              <div className="about-employment">
                 <span>
-                  <LinkedInIcon />
+                  <WorkOutlineOutlinedIcon />
                 </span>
-                LinkedIn
-              </a>
-              <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
-                <span>
-                  <EmailIcon />
-                </span>
-                Email
-              </a>
+                Open to Work!
+              </div>
             </div>
+          </div>
+          <TechStack />
+          <div className="about-social-wrapper stagger-item delay-4">
+            <a className="about-socials link-styles" href="https://github.com" target="_blank">
+              <span>
+                <GitHubIcon />
+              </span>
+              Github
+            </a>
+            <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
+              <span>
+                <LinkedInIcon />
+              </span>
+              LinkedIn
+            </a>
+            <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
+              <span>
+                <EmailIcon />
+              </span>
+              Email
+            </a>
           </div>
         </div>
         <div className="about-featured">
@@ -112,31 +116,6 @@ function AboutPage({ setActiveTab }) {
             }}
           />
         </div>
-      </div>
-      <div className="about-footer-wrapper">
-        <p className="about-footer">
-          Developed and designed in{" "}
-          <a href="https://code.visualstudio.com/" target="_blank" className="link-styles">
-            Visual Studio Code
-          </a>
-          . Built with the latest{" "}
-          <a href="https://react.dev/" target="_blank" className="link-styles">
-            React
-          </a>{" "}
-          and{" "}
-          <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" className="link-styles">
-            CSS
-          </a>{" "}
-          on{" "}
-          <a href="https://vite.dev/" target="_blank" className="link-styles">
-            Vite
-          </a>
-          , deployed with{" "}
-          <a href="https://vercel.com/home" target="_blank" className="link-styles">
-            Vercel
-          </a>
-          .
-        </p>
       </div>
     </div>
   );
