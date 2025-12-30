@@ -25,6 +25,22 @@ function AboutPage({ setActiveTab }) {
         <div className="about-content-wrapper">
           <div className="about-profile-wrapper">
             <img src={Profile} className="about-img stagger-item delay-1" />
+            <div className="about-status stagger-item delay-4">
+              <div className="about-status-wrapper">
+                <div className="about-location">
+                  <span>
+                    <FmdGoodOutlinedIcon />
+                  </span>
+                  San Diego, CA
+                </div>
+                <div className="about-employment">
+                  <span>
+                    <WorkOutlineOutlinedIcon />
+                  </span>
+                  Seeking
+                </div>
+              </div>
+            </div>
           </div>
           <div className="about-p">
             <div className="about-p1 stagger-item delay-1">
@@ -53,42 +69,26 @@ function AboutPage({ setActiveTab }) {
             <div className="about-p2 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and graphic design.
             </div>
-          </div>
-        </div>
-        <div className="about-status stagger-item delay-4">
-          <div className="about-status-wrapper">
-            <div className="about-location">
-              <span>
-                <FmdGoodOutlinedIcon />
-              </span>
-              San Diego, CA
+            <div className="about-social-wrapper stagger-item delay-4">
+              <a className="about-socials link-styles" href="https://github.com" target="_blank">
+                <span>
+                  <GitHubIcon />
+                </span>
+                Github
+              </a>
+              <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
+                <span>
+                  <LinkedInIcon />
+                </span>
+                LinkedIn
+              </a>
+              <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
+                <span>
+                  <EmailIcon />
+                </span>
+                Email
+              </a>
             </div>
-            <div className="about-employment">
-              <span>
-                <WorkOutlineOutlinedIcon />
-              </span>
-              Seeking
-            </div>
-          </div>
-          <div className="about-social-wrapper">
-            <a className="about-socials link-styles" href="https://github.com" target="_blank">
-              <span>
-                <GitHubIcon />
-              </span>
-              Github
-            </a>
-            <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
-              <span>
-                <LinkedInIcon />
-              </span>
-              LinkedIn
-            </a>
-            <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
-              <span>
-                <EmailIcon />
-              </span>
-              Email
-            </a>
           </div>
         </div>
         <div className="about-featured">

@@ -30,8 +30,6 @@
   margin-top: 1rem;
   align-items: center;
   justify-content: left;
-  gap: 15rem;
-  margin-bottom: 3rem;
 }
 
 .about-status-wrapper {
@@ -46,6 +44,7 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .about-employment svg,
@@ -112,19 +111,19 @@
 }
 
 .about-img {
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
   object-fit: cover;
-  display: flex;
-  max-height: 21rem;
+  flex-shrink: 0;
 }
 
 .about-content-wrapper {
   display: flex;
   flex-direction: row; /* Forces side-by-side layout */
-  gap: 3.1rem;
-  height: auto;
-  align-items: stretch;
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 .about-github {
@@ -150,4 +149,8 @@
   height: auto;
   /* Optional: if the library renders fixed widths, force scaling */
   transform-origin: center top;
+}
+
+.about-featured {
+  margin-top: 3rem;
 }

@@ -19,7 +19,7 @@ function App() {
         </>
       ),
       description: "Designer and Developer",
-      summary: "A little bit about me and what I bring to the table",
+      summary: "A little bit about me and what I bring to the table and something else",
     },
     "#ExperiencePage": {
       name: "My Journey",
