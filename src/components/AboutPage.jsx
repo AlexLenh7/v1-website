@@ -1,12 +1,14 @@
 import "../css/AboutPage.css";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import Profile from "../assets/Profile.jpg";
 import { GitHubCalendar } from "react-github-calendar";
 import FeaturedProjects from "./FeaturedProjects";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 
-function AboutPage() {
+function AboutPage({ setActiveTab }) {
   const currYear = new Date().getFullYear();
   const githubTheme = {
     dark: [
@@ -49,27 +51,48 @@ function AboutPage() {
               exploring the frontend.
             </div>
             <div className="about-p2 stagger-item delay-3">
-              Outside of software, I enjoy playing games, watching anime, and reading.
+              Outside of software, some of my hobbies include playing games, watching anime, and graphic design.
             </div>
           </div>
         </div>
         <div className="about-status stagger-item delay-4">
-          <div className="about-location">
-            <span>
-              <FmdGoodOutlinedIcon />
-            </span>
-            San Diego, CA
+          <div className="about-status-wrapper">
+            <div className="about-location">
+              <span>
+                <FmdGoodOutlinedIcon />
+              </span>
+              San Diego, CA
+            </div>
+            <div className="about-employment">
+              <span>
+                <WorkOutlineOutlinedIcon />
+              </span>
+              Seeking
+            </div>
           </div>
-          <div className="about-employment">
-            <span>
-              <WorkOutlineOutlinedIcon />
-            </span>
-            Seeking
+          <div className="about-social-wrapper">
+            <a className="about-socials link-styles" href="https://github.com" target="_blank">
+              <span>
+                <GitHubIcon />
+              </span>
+              Github
+            </a>
+            <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
+              <span>
+                <LinkedInIcon />
+              </span>
+              LinkedIn
+            </a>
+            <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
+              <span>
+                <EmailIcon />
+              </span>
+              Email
+            </a>
           </div>
-          <div className="about-socials"></div>
         </div>
-        <div>
-          <FeaturedProjects />
+        <div className="about-featured">
+          <FeaturedProjects setActiveTab={setActiveTab} />
         </div>
         <div className="about-github stagger-item delay-1">
           <GitHubCalendar

@@ -66,7 +66,7 @@ function App() {
         <main className="dynamic-right-side">
           {activeTab === "#AboutPage" && (
             <div id="AboutPage" className="page-transition">
-              <AboutPage />
+              <AboutPage setActiveTab={setActiveTab} />
             </div>
           )}
           {activeTab === "#ExperiencePage" && (

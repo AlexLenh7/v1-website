@@ -51,9 +51,10 @@ const Projects = [
   },
   {
     id: 6,
-    title: "Places visted",
+    title: "Family Country Tracker",
     img: blackjack,
-    description: "Website for tracking visited places across the world, view and add countries for each user",
+    description:
+      "Website for tracking visited places across the world, view, add, and delete countries for each family member",
     tags: "Postgres, Javascript, HTML, CSS, EJS, jQuery",
     date: "Oct 2025 - Nov 2025",
     link: "https://github.com/AlexLenh7/Blackjack-Project",

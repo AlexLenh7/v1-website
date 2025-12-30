@@ -3,17 +3,23 @@ import projects from "../projects";
 import "../css/FeaturedProjects.css";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
-function FeaturedProjects() {
+function FeaturedProjects({ setActiveTab }) {
   return (
     <div className="featured-container">
-      <div className="featured-title stagger-item delay-5">
-        Featured Projects{" "}
-        <a className="featured-more link-styles" href="#ProjectPage">
-          view more
-          <ArrowRightOutlinedIcon />
-        </a>
-      </div>
       <div className="container-border">
+        <div className="featured-title stagger-item delay-5">
+          Featured Projects{" "}
+          <a
+            className="featured-more link-styles"
+            href="#ProjectPage"
+            onClick={() => {
+              setActiveTab("#ProjectPage");
+            }}
+          >
+            view more
+            <ArrowRightOutlinedIcon />
+          </a>
+        </div>
         <div className="featured-wrapper">
           {projects
             .filter((entry) => entry.id === 1 || entry.id === 3)

@@ -11,13 +11,14 @@
 .content-wrapper {
   display: flex;
   width: 92%;
-  max-width: 1600px; /* Limits how far apart they spread on big screens */
+  max-width: calc(1600px - 8rem); /* Limits how far apart they spread on big screens */
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  gap: 8rem;
+  gap: clamp(5rem, 8rem, 8rem);
 }
 
+/* Remove on screens smaller than laptop large*/
 .frame-overlay {
   position: fixed;
   inset: 0;
@@ -54,16 +55,15 @@
   margin: 3rem;
 }
 
-/* 3. Left Side: Adjusting from 50vw to 50% */
 .static-left-side {
-  width: 50%; /* Takes half of the 1200px wrapper */
+  top: 0;
+  width: 50%;
   height: 100vh;
   position: sticky;
-  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 7rem; /* Use padding instead of huge margins */
+  padding-top: 7rem;
   padding-bottom: 7rem;
   padding-left: 2rem;
   box-sizing: border-box;
