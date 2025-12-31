@@ -182,6 +182,7 @@
 .link-styles {
   text-decoration: none;
   color: var(--text);
+  transition: all 0.3s;
 }
 
 .link-styles:hover {

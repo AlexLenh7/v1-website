@@ -8,12 +8,12 @@ function CreateExperience({ tags, link, title, date, description }) {
     <div className="experience">
       <a className="exp-hover-layer" href={link} target="_blank"></a>
       <div className="exp-content">
-        <h1 className="exp-title">
+        <span className="exp-date">{date}</span>
+        <h1 className="exp-title link-styles">
           {title}
           <span className="exp-link">{link && <ArrowOutwardIcon />}</span>
         </h1>
-        <span className="exp-date">{date}</span>
-        <p className="exp-description">{description}</p>
+        <ul className="exp-description">{description}</ul>
 
         <div className="tag-container">
           {individualtags.map((tagName, index) => {

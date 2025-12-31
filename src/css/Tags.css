@@ -5,8 +5,9 @@
   padding: 4px 10px;
   margin-right: 4px;
   margin-top: 4px;
-  background-color: var(--secondary);
-  border-radius: 12px;
-  color: var(--primary);
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: var(--text);
   font-size: 0.8rem;
+  font-weight: 500;
 }

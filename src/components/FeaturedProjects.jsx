@@ -1,5 +1,5 @@
 import CreateProject from "./CreateProject";
-import projects from "../projects";
+import projects from "../data/projects";
 import "../css/FeaturedProjects.css";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";

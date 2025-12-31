@@ -25,6 +25,7 @@
 }
 
 .project:hover svg {
+  transition: all 0.3s;
   transform: translate(5px, -5px);
 }
 
@@ -34,7 +35,7 @@
   height: 12rem;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 0px 7px var(--primary);
+  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.15);
 }
 
 .project:hover {
@@ -73,7 +74,7 @@
   align-items: baseline;
   color: var(--text);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1;
   margin-top: 1rem;
 }
@@ -85,13 +86,15 @@
   justify-content: center;
   vertical-align: center;
   line-height: 1;
+  padding-top: 0.5rem;
 }
 
 .project-description {
-  margin-top: 0.2rem;
+  margin-top: 0.5rem;
   line-height: 1.5;
   color: var(--secondary-text);
   font-weight: 400;
+  font-size: 0.9rem;
 }
 
 /* 1. Change title color on parent hover */
@@ -111,7 +114,7 @@
 }
 
 .tag-container {
-  margin-top: 0.7rem;
+  margin-top: 0.5rem;
 }
 
 .description-tag-wrapper {

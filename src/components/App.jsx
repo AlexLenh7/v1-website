@@ -19,15 +19,23 @@ function App() {
         </>
       ),
       description: "Designer and Developer",
-      summary: "A little bit about me, what I do, and to the table and something else",
+      summary: "Overview of my journey, technical skills, and the passion I bring to every project",
     },
     "#ExperiencePage": {
-      name: "My Journey",
+      name: (
+        <>
+          My <span className="primary-color">Experience</span>
+        </>
+      ),
       description: "Driven Success",
       summary: "My growth as a developer, from university projects to professional work",
     },
     "#ProjectPage": {
-      name: "Past Projects",
+      name: (
+        <>
+          Past <span className="primary-color">Projects</span>
+        </>
+      ),
       description: "Creative & Technical",
       summary: "A collection of applications and tools I've built in my free time",
     },

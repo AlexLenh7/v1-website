@@ -8,6 +8,10 @@
   transition: all 0.3s ease;
 }
 
+.expandable.expanded .expandable-header {
+  color: var(--primary);
+}
+
 .expandable-header {
   grid-column: 2; /* Forces the button into the exact center column */
   grid-row: 1; /* Keeps it on the same line as the others */
@@ -21,10 +25,8 @@
 }
 
 .expandable-content {
-  grid-column: 1 / -1; /* Spans all 3 columns */
-  grid-row: 2; /* Moves to the row below the headers */
-
-  /* Animation Logic */
+  grid-column: 1 / -1;
+  grid-row: 2;
   display: grid;
   grid-template-rows: 0fr;
   transition: all 0.3s ease-in-out;

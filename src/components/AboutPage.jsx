@@ -8,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import TechStack from "./TechStack";
+import TimelineIcon from "@mui/icons-material/Timeline";
 
 function AboutPage({ setActiveTab }) {
   const currYear = new Date().getFullYear();
@@ -52,7 +53,8 @@ function AboutPage({ setActiveTab }) {
               exploring the frontend.
             </div>
             <div className="about-p2 stagger-item delay-3">
-              Outside of software, some of my hobbies include playing games, watching anime, and graphic design.
+              Outside of software, some of my hobbies include playing games, watching anime, and occasionally graphic
+              design.
             </div>
           </div>
         </div>
@@ -99,11 +101,15 @@ function AboutPage({ setActiveTab }) {
           <FeaturedProjects setActiveTab={setActiveTab} />
         </div>
         <div className="about-github stagger-item delay-1">
+          <span className="about-github-title">
+            <TimelineIcon />
+            Recent Activity
+          </span>
           <GitHubCalendar
             username="AlexLenh7"
             year={currYear}
-            blockSize={12}
-            blockMargin={3}
+            blockSize={13}
+            blockMargin={4}
             fontSize={12}
             loading={false}
             theme={githubTheme}
@@ -112,7 +118,8 @@ function AboutPage({ setActiveTab }) {
               height: "auto",
               maxWidth: "100%",
               display: "block",
-              padding: "1.5rem",
+              margin: "0 auto",
+              flexGrow: "1",
             }}
           />
         </div>

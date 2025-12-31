@@ -132,9 +132,25 @@
   border-radius: 12px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   overflow: hidden;
   margin-top: 2rem;
+  padding: 1rem;
+}
+
+.about-github-title {
+  white-space: nowrap;
+  text-align: left;
+  display: flex;
+  padding-bottom: 1rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.about-github-title svg {
+  color: var(--primary);
+  margin-right: 0.25rem;
 }
 
 .about-github > div {
@@ -144,10 +160,8 @@
 }
 
 .about-github svg {
-  /* This ensures the calendar shrinks to fit the container width */
   max-width: 100%;
   height: auto;
-  /* Optional: if the library renders fixed widths, force scaling */
   transform-origin: center top;
 }
 

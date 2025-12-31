@@ -1,39 +1,27 @@
 /* ExperiencePage.css */
-
-.exp-page-container {
-  margin-top: 5rem;
-}
-
-.exp-page-title {
-  display: flex;
-  font-weight: 500;
-  line-height: 1;
-  font-size: 1.25rem;
-  margin-top: 3.1rem;
-}
-
 .exp-page {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Keeps content aligned to the right */
-  text-align: left; /* Ensures text within cards is right-aligned */
+  align-items: flex-end;
+  text-align: left;
   width: 100%;
-
-  /* Internal Scrolling Logic */
   height: auto;
   overflow-y: visible;
   gap: 1rem;
+}
+
+.exp-note-container {
+  margin-bottom: 2rem;
 }
 
 .exp-disclaimer {
   font-weight: 400;
   line-height: 1.5;
   color: var(--secondary-text);
-  margin-top: 1.75rem;
 }
 
 .exp-resume {
-  margin-top: 1.75rem;
+  margin-top: 1rem;
   font-size: 1.1rem;
   width: fit-content;
   line-height: 1;
@@ -56,6 +44,120 @@
   color: var(--primary);
 }
 
-.exp-resume:hover svg {
-  transform: translate(5px, -5px);
+.exp-tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.exp-tab-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.exp-tab-1,
+.exp-tab-2 {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  height: min-content;
+  cursor: pointer;
+  width: 50%;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px transparent solid;
+  align-items: center;
+  line-height: 2;
+  transition: all 0.4s;
+}
+
+.exp-timeline {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 3px;
+  background-color: white;
+}
+
+.exp-tab-1.active,
+.exp-tab-2.active {
+  color: var(--text);
+  background-color: var(--primary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.exp-tab-1:not(.active),
+.exp-tab-2:not(.active) {
+  color: var(--secondary-text);
+}
+
+.exp-tab-1 svg,
+.exp-tab-2 svg {
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.tab-link-styles:not(.active):hover {
+  color: var(--primary);
+}
+
+.react-tabs__tab-list {
+  display: flex;
+}
+
+.exp-timeline-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+/* The continuous Vertical Line */
+.exp-timeline-wrapper::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 5%,
+    rgba(255, 255, 255, 0.3) 95%,
+    transparent 100%
+  );
+}
+
+.exp-timeline-item {
+  position: relative;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+/* The Dots */
+.exp-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 11px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  border: 3px solid var(--primary);
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.exp-timeline-item:hover::before {
+  transform: scale(1.4);
+  background-color: var(--text);
 }
