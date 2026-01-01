@@ -30,6 +30,19 @@ html {
   overflow-x: hidden;
 }
 
+/* CHANGE THIS LATER */
+@media (max-width: 1350px) {
+  html {
+    scroll-padding-top: 20rem;
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    scroll-padding-top: 25rem;
+  }
+}
+
 body {
   background-color: var(--background);
   color: var(--text);

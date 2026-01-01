@@ -63,3 +63,32 @@
   text-decoration: none;
   font-weight: 500;
 }
+
+@media (max-width: 1350px) {
+  .footer-container {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 0;
+    align-items: center;
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .copyright-text {
+    white-space: nowrap;
+    margin-right: 1rem;
+  }
+
+  .about-footer {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}

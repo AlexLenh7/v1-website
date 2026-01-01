@@ -15,7 +15,10 @@ function App() {
     "#AboutPage": {
       name: (
         <>
-          Hi! I'm <span className="primary-color">Alex</span> <WavingHandIcon className="about-wave" />
+          <span className="name-line-1">Hi! I'm</span>{" "}
+          <span className="name-line-2">
+            <span className="primary-color">Alex</span> <WavingHandIcon className="about-wave" />
+          </span>
         </>
       ),
       description: "Designer and Developer",
@@ -50,7 +53,6 @@ function App() {
       <div className="content-wrapper">
         <header className="static-left-side">
           <div className="left-side">
-            {/* Group the top elements together */}
             <div className="top-group">
               <div id="landing-page" className="page-transition">
                 <LandingPage
@@ -65,8 +67,7 @@ function App() {
               </div>
             </div>
 
-            {/* Footer remains separate to be pushed to the bottom */}
-            <footer id="footer">
+            <footer id="footer-big">
               <Footer />
             </footer>
           </div>
@@ -87,6 +88,9 @@ function App() {
               <ProjectPage />
             </div>
           )}
+          <footer id="footer-small">
+            <Footer />
+          </footer>
         </main>
       </div>
       <div className="frame-outline"></div>

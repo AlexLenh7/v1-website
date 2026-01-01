@@ -7,6 +7,7 @@ import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import education from "../data/education";
 import CreateEducation from "./CreateEducation";
+import LabelImportantOutlineIcon from "@mui/icons-material/LabelImportantOutline";
 
 // Dynamically adds from project
 function ExperiencePage() {
@@ -17,7 +18,11 @@ function ExperiencePage() {
   return (
     <div className="exp-page-container">
       <div className="exp-note-container container-border">
-        <div className="exp-note stagger-item delay-1">README</div>
+        <div className="exp-note stagger-item delay-1">
+          {" "}
+          <LabelImportantOutlineIcon />
+          README
+        </div>
         <p className="exp-disclaimer stagger-item delay-2">
           Driven by a passion for clean code and user-centric design, I have spent the past {monthsSinceGrad} months
           learning and honing my skills by developing modern software solutions. These projects represent my technical
@@ -34,7 +39,7 @@ function ExperiencePage() {
         <TabList className={"exp-tab-wrapper stagger-item delay-1"}>
           <Tab selectedClassName="active" className={"exp-tab-1 tab-link-styles"}>
             <WorkHistoryOutlinedIcon />
-            Relevant Experience
+            Experience
           </Tab>
           <Tab selectedClassName="active" className={"exp-tab-2 tab-link-styles"}>
             <SchoolOutlinedIcon />

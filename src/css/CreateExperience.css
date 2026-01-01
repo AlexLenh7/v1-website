@@ -69,8 +69,6 @@
   color: var(--primary);
   font-size: 0.8rem;
   align-items: center;
-  justify-content: center;
-  vertical-align: center;
   line-height: 1;
   padding-bottom: 0.5rem;
 }
@@ -83,6 +81,8 @@
   font-size: 0.9rem;
   list-style: disc;
   padding-left: 1.05rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .exp-description li {

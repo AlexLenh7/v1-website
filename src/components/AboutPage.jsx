@@ -62,38 +62,38 @@ function AboutPage({ setActiveTab }) {
           <div className="about-status stagger-item delay-4">
             <div className="about-status-wrapper">
               <div className="about-location">
-                <span>
+                <span className="status-1">
                   <FmdGoodOutlinedIcon />
+                  San Diego, CA
                 </span>
-                San Diego, CA
               </div>
               <div className="about-employment">
-                <span>
+                <span className="status-2">
                   <WorkOutlineOutlinedIcon />
+                  Open to Work!
                 </span>
-                Open to Work!
               </div>
             </div>
           </div>
           <TechStack />
           <div className="about-social-wrapper stagger-item delay-4">
             <a className="about-socials link-styles" href="https://github.com" target="_blank">
-              <span>
+              <span className="social-1">
                 <GitHubIcon />
+                Github
               </span>
-              Github
             </a>
             <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
-              <span>
+              <span className="social-2">
                 <LinkedInIcon />
+                LinkedIn
               </span>
-              LinkedIn
             </a>
             <a className="about-socials link-styles" href="mailto:alexlenh1@gmail.com">
-              <span>
+              <span className="social-3">
                 <EmailIcon />
+                Email
               </span>
-              Email
             </a>
           </div>
         </div>

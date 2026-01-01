@@ -21,3 +21,9 @@
   filter: blur(0px);
   transform: scale(1.02);
 }
+
+@media (max-width: 425px) {
+  .project-page {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}

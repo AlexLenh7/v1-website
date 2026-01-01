@@ -1,7 +1,6 @@
 /* LandingPage.css */
 
 .welcome-text {
-  /* Prevents the container from becoming a tiny sliver on mobile */
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -13,19 +12,17 @@
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
   width: fit-content;
   line-height: 1;
   white-space: nowrap;
-  letter-spacing: -0.05em;
-  margin-left: -3px;
 }
 
 .name svg {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .welcome-text > h2 {
@@ -43,4 +40,56 @@
   margin-top: 1rem;
   max-height: 3rem;
   height: 3rem;
+}
+
+@media (max-width: 1350px) {
+  .name {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .welcome-text > h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .summary {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .summary {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .name {
+    display: flex;
+    flex-direction: column; /* Stacks the two lines */
+    width: 100%;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .name-line-2 {
+    display: flex;
+    align-items: center; /* Vertically centers the wave with the name */
+    justify-content: center;
+    gap: 1rem; /* PIXEL PERFECT CONTROL: Adjust this for the gap */
+  }
+
+  .name-line-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

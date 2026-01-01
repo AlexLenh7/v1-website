@@ -99,6 +99,30 @@
   min-width: 0;
 }
 
+.about-wave {
+  animation: wave 2.1s 0.6s;
+  transform-origin: bottom left;
+}
+
+.about-wave svg {
+  font-size: 3rem;
+}
+
+.page-transition {
+  opacity: 0;
+  animation: fadeInUp 0.3s ease-out forwards;
+  animation-delay: 0.1s;
+}
+.primary-color {
+  color: var(--primary);
+  display: inline !important;
+  font-family: "Montserrat";
+}
+
+#footer-small {
+  display: none;
+}
+
 @keyframes wave {
   0% {
     transform: rotate(0deg) scale(1);
@@ -124,21 +148,6 @@
   100% {
     transform: rotate(0deg) scale(1);
   }
-}
-
-.about-wave {
-  animation: wave 2.1s 0.6s;
-  transform-origin: bottom left;
-}
-
-.about-wave svg {
-  font-size: 3rem;
-}
-
-.page-transition {
-  opacity: 0;
-  animation: fadeInUp 0.3s ease-out forwards;
-  animation-delay: 0.1s;
 }
 
 @keyframes fadeInUp {
@@ -190,8 +199,60 @@
   transition: all 0.3s;
 }
 
-.primary-color {
-  color: var(--primary);
-  display: inline !important;
-  font-family: "Montserrat";
+/* SCREEN SIZES LESS THAN 1350PX */
+
+@media (max-width: 1350px) {
+  .app-container {
+    min-height: 100%;
+  }
+
+  .content-wrapper {
+    height: fit-content;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .frame-overlay {
+    display: none;
+  }
+  .frame-outline {
+    display: none;
+  }
+  .static-left-side {
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 6rem;
+    padding-right: 2rem;
+    padding-bottom: 0;
+  }
+
+  .dynamic-right-side {
+    padding-top: 0;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    width: 100%;
+  }
+
+  #footer-big {
+    display: none;
+  }
+
+  #footer-small {
+    display: block;
+  }
+
+  .primary-color {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .primary-color {
+    padding-left: 0rem;
+  }
 }

@@ -14,6 +14,19 @@
   margin-bottom: 2rem;
 }
 
+.exp-note {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+}
+
+.exp-note svg {
+  color: var(--primary);
+  margin-right: 0.25rem;
+}
+
 .exp-disclaimer {
   font-weight: 400;
   line-height: 1.5;
@@ -22,7 +35,7 @@
 
 .exp-resume {
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: fit-content;
   line-height: 1;
 }
@@ -38,6 +51,11 @@
   vertical-align: middle;
   font-size: 1rem;
   margin-left: 0.25rem;
+}
+
+.exp-resume:hover svg {
+  transform: translate(5px, -5px);
+  transition: all 0.3s;
 }
 
 .exp-resume a:hover {

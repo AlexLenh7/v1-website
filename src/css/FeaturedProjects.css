@@ -54,3 +54,9 @@
 .featured-more:hover {
   color: var(--primary);
 }
+
+@media (max-width: 375px) {
+  .featured-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
