@@ -8,6 +8,7 @@ import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import education from "../data/education";
 import CreateEducation from "./CreateEducation";
 import LabelImportantOutlineIcon from "@mui/icons-material/LabelImportantOutline";
+import Resume from "../assets/Resume_AlexLenh.pdf";
 
 // Dynamically adds from project
 function ExperiencePage() {
@@ -25,11 +26,11 @@ function ExperiencePage() {
         </div>
         <p className="exp-disclaimer stagger-item delay-2">
           Driven by a passion for clean code and user-centric design, I have spent the past {monthsSinceGrad} months
-          learning and honing my skills by developing modern software solutions. These projects represent my technical
-          foundation and my commitment to professional growth as an entry-level engineer.
+          learning and developing my skills by building modern software solutions. My current experience represents my
+          technical foundation and my commitment to professional growth as an entry-level engineer.
         </p>
         <div className="exp-resume stagger-item delay-3">
-          <a href="google.com" target="_blank" className="link-styles">
+          <a href={Resume} target="_blank" className="link-styles">
             View Full Resume
             <ArrowOutwardIcon />
           </a>

@@ -30,29 +30,29 @@ function AboutPage({ setActiveTab }) {
           </div>
           <div className="about-p">
             <div className="about-p1 stagger-item delay-1">
-              Recent Computer Science graduate at{" "}
+              Recent CS grad{" "}
               <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
-                San Diego State University
+                @SDSU
               </a>{" "}
-              with a passion for building functional, high-quality applications. During my time at SDSU, I obtained a
-              strong foundation in CS while being highly adaptable at learning in a fast pace enviornment. I have a
-              strong passion for web and software development through various projects I have built.
+              combining backend systems with my passion for detailed designs. During my time at SDSU, I obtained strong
+              fundamentals while being adaptable at learning in a fast pace enviornment. I have a strong passion for web
+              and software development through various projects I have built.
             </div>
             <div className="about-p2 stagger-item delay-2">
               Some of my notable projects include building a{" "}
-              <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
+              <a href="https://github.com/AlexLenh7/Discord-Bot" target="_blank" className="link-styles">
                 Discord Bot
               </a>
               {", "}
               to improve and automate my daily workflow, and a{" "}
-              <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
+              <a href="https://github.com/AlexLenh7/Lock-In-Extension" target="_blank" className="link-styles">
                 Chrome Extension
               </a>
               {", "}
               to reduce constant distractions and improve focus. My work currently focuses on backend development while
               exploring the frontend.
             </div>
-            <div className="about-p2 stagger-item delay-3">
+            <div className="about-p3 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and occasionally graphic
               design.
             </div>
@@ -77,13 +77,17 @@ function AboutPage({ setActiveTab }) {
           </div>
           <TechStack />
           <div className="about-social-wrapper stagger-item delay-4">
-            <a className="about-socials link-styles" href="https://github.com" target="_blank">
+            <a className="about-socials link-styles" href="https://github.com/AlexLenh7" target="_blank">
               <span className="social-1">
                 <GitHubIcon />
                 Github
               </span>
             </a>
-            <a className="about-socials link-styles" href="https://linkedin.com" target="_blank">
+            <a
+              className="about-socials link-styles"
+              href="https://www.linkedin.com/in/alex-lenh-6a560a236/"
+              target="_blank"
+            >
               <span className="social-2">
                 <LinkedInIcon />
                 LinkedIn

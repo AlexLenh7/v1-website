@@ -48,56 +48,43 @@
 
 .about-tech-stack {
   min-height: 0;
-  color: var(--text);
 }
 
 .about-tech-stack ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
   list-style: none;
+  gap: 1rem;
   padding: 0;
   margin: 0;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.about-tech-stack li svg {
-  font-size: 1rem;
-}
-
-.about-tech-stack div {
-  margin-top: 0.5rem;
-  color: var(--text);
-}
-
 .about-tech-stack li {
+  color: var(--text);
   display: flex;
+  gap: 0.25rem;
   align-items: center;
-  font-size: 0.85rem;
-  color: var(--secondary-text);
-  line-height: 1.75rem;
+  pointer-events: auto;
+  justify-content: center;
+  line-height: 0;
+  padding: 1rem;
+}
+
+.about-tech-stack li:hover {
+  color: var(--primary);
+  border-radius: 8px;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .expandable-header svg:first-of-type {
   color: var(--primary);
 }
 
-.list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 0;
-  color: var(--primary);
-}
-
 .expand-arrow {
-  font-size: 1.25rem;
-  color: var(--primary);
-}
-
-.list-name {
-  color: var(--primary);
+  font-size: 1rem;
 }
 
 @media (max-width: 800px) {

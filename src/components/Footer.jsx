@@ -11,10 +11,10 @@ function Footer() {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="social-links">
-          <a href="https://github.com" target="_blank" rel="noopener">
+          <a href="https://github.com/AlexLenh7" target="_blank" rel="noopener">
             <GitHubIcon />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener">
+          <a href="https://www.linkedin.com/in/alex-lenh-6a560a236/" target="_blank" rel="noopener">
             <LinkedInIcon />
           </a>
           <a href="mailto:alexlenh1@gmail.com">

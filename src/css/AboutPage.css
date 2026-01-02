@@ -14,10 +14,16 @@
 }
 
 .about-p1,
-.about-p2 {
-  line-height: 1.75;
+.about-p2,
+.about-p3 {
+  line-height: 2;
   color: var(--secondary-text);
   margin: 0;
+}
+
+.about-p1,
+.about-p2 {
+  margin-bottom: 1rem;
 }
 
 .about-status-social {

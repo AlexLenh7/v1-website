@@ -1,6 +1,6 @@
 .featured-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
 
   /* Internal Scrolling Logic */

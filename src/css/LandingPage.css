@@ -12,7 +12,7 @@
 }
 
 .name {
-  font-size: 3.5rem;
+  font-size: 3.7rem;
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
@@ -22,7 +22,7 @@
 }
 
 .name svg {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .welcome-text > h2 {

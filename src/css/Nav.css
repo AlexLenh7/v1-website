@@ -75,7 +75,7 @@ ul {
     -webkit-mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
   }
 
-  ul {
+  .nav-links {
     display: flex;
     width: 100%;
     justify-content: right;
@@ -96,7 +96,7 @@ ul {
     font-size: 1rem;
   }
 
-  ul {
+  .nav-links {
     gap: 0;
     justify-content: space-evenly;
   }

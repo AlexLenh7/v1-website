@@ -1,48 +1,88 @@
 import { useState } from "react";
-import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import "../css/TechStack.css";
-import Tags from "./Tags";
+import {
+  SiJavascript,
+  SiReact,
+  SiNodedotjs,
+  SiCss3,
+  SiHtml5,
+  SiPostgresql,
+  SiGit,
+  SiSqlite,
+  SiSequelize,
+  SiExpress,
+  SiVite,
+} from "react-icons/si";
 
 const TechStack = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const techItems = [
-    "JavaScript",
-    "React",
-    "Node.js",
-    "Vite",
-    "CSS / SCSS",
-    "HTML5",
-    "PostgreSQL",
-    "Git",
-    "SQLite",
-    "Sequelize",
+    {
+      name: "JavaScript",
+      icon: <SiJavascript />,
+    },
+    {
+      name: "React",
+      icon: <SiReact />,
+    },
+    {
+      name: "Node.js",
+      icon: <SiNodedotjs />,
+    },
+    {
+      name: "CSS",
+      icon: <SiCss3 />,
+    },
+    {
+      name: "HTML5",
+      icon: <SiHtml5 />,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql />,
+    },
+    {
+      name: "Git",
+      icon: <SiGit />,
+    },
+    {
+      name: "SQLite",
+      icon: <SiSqlite />,
+    },
+    {
+      name: "Sequelize",
+      icon: <SiSequelize />,
+    },
+    {
+      name: "Express",
+      icon: <SiExpress />,
+    },
+    {
+      name: "Vite",
+      icon: <SiVite />,
+    },
   ];
 
   return (
     /* display: contents makes this div "invisible" to the grid layout, 
        allowing the children to place themselves in the AboutPage grid directly */
     <div className={`expandable ${isExpanded ? "expanded" : ""}`} style={{ display: "contents" }}>
-      {/* This goes into Column 2 of the AboutPage grid */}
       <div className="expandable-header link-styles stagger-item delay-4" onClick={() => setIsExpanded(!isExpanded)}>
         <LayersOutlinedIcon />
         Tech Stack
         {isExpanded ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </div>
 
-      {/* This spans Columns 1, 2, and 3 in Row 2 of the AboutPage grid */}
       <div className="expandable-content">
         <div className="about-tech-stack">
           <ul>
             {techItems.map((item, index) => (
               <li key={index} className="list-item">
-                <span className="expand-arrow">
-                  <ArrowRightOutlinedIcon />
-                </span>{" "}
-                <span className="list-name">{item}</span>
+                <span className="expand-arrow">{item.icon}</span> <span className="list-name">{item.name}</span>
               </li>
             ))}
           </ul>

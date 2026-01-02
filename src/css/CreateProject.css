@@ -35,7 +35,9 @@
   height: 12rem;
   border-radius: 8px;
   object-fit: cover;
-  box-shadow: 0 0px 10px rgba(255, 255, 255, 0.15);
+  border: 1px rgba(255, 255, 255, 0.05) solid;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  background-color: var(--background);
 }
 
 .project:hover {
