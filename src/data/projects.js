@@ -1,7 +1,7 @@
 import sysadmin from "../assets/SysadminThumbnail.png";
 import blackjack from "../assets/Blackjack.png";
 import facemodel from "../assets/FaceDetectionThumbnail.png";
-import discordbotThumbnail from "../assets/discordbotThumbnail.png";
+import discordbotThumbnail from "../assets/DiscordbotThumbnail.png";
 import extension from "../assets/ExtensionThumbnail.png";
 import familyTracker from "../assets/FamilyTrackerThumbnail.png";
 

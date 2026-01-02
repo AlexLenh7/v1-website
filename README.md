@@ -14,7 +14,8 @@ Things I might add in the future:
 # Inspiration
 
 Some of the websites that inspired me
-https://brittanychiang.com/#about
-https://p5aholic.me/
-https://jasoncameron.dev/
-https://tedawf.com/
+
+- https://brittanychiang.com/#about
+- https://p5aholic.me/
+- https://jasoncameron.dev/
+- https://tedawf.com/
