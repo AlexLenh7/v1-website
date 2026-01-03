@@ -8,7 +8,6 @@ The first and possibly last iteration of my personal portfolio. Designed to show
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/AlexLenh7/v1-website?style=flat-square&logo=github&label=last%20commit" alt="github last commit">
     <img src="https://img.shields.io/badge/Deployed%20on-Vercel-black" alt="Deployed on Vercel">
-    <>
 </div>
 
 ## Currently WIP
