@@ -11,7 +11,7 @@ const Projects = [
     title: "Backend Discord Bot",
     img: discordbotThumbnail,
     description:
-      "Discord bot to automated workflows and streamline mundane tasks through external service interactions.",
+      "Discord bot to automated workflows and streamline mundane tasks through API interactions and utilizing Sqlite storing data",
     tags: "Javascript, Node.js, SQLite, API, Sequelize",
     date: "May 2025 - Aug 2025",
     link: "https://github.com/AlexLenh7/Discord-Bot",
@@ -21,7 +21,7 @@ const Projects = [
     title: "UNIX/System Administration",
     img: sysadmin,
     description:
-      "Multi-platform virtual infrastructure across FreeBSD, OpenBSD, Linux, Solaris, and AIX, integrating mail, web, file, and print servers.",
+      "Multi-platform virtual infrastructure across FreeBSD, OpenBSD, Linux, Solaris, and AIX, integrating mail, web, file, and print servers",
     tags: "Bash, Azure, Linux, Unix, SysAdmin",
     date: "Jan 2025 - May 2025",
   },
@@ -47,7 +47,7 @@ const Projects = [
     id: 5,
     title: "CLI Blackjack Game",
     img: blackjack,
-    description: "Single-player Blackjack game in C++",
+    description: "Single-player CLI Blackjack game in C++",
     tags: "C++",
     date: "Mar 2025 - May 2025",
     link: "https://github.com/AlexLenh7/Blackjack-Project",
@@ -57,10 +57,9 @@ const Projects = [
     title: "Family Country Tracker",
     img: familyTracker,
     description:
-      "Website for tracking visited places across the world, view, add, and delete countries for each family member",
+      "Website for tracking visited places across the world. View, add, and delete visted countries for each family member",
     tags: "Postgres, Javascript, HTML, CSS, EJS, jQuery",
     date: "Oct 2025 - Nov 2025",
-    link: "https://github.com/AlexLenh7/Blackjack-Project",
   },
 ];
 
