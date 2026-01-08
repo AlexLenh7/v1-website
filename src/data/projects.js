@@ -32,7 +32,7 @@ const Projects = [
     description: "Tracks time on each website with tools to block interactions based on user defined settings",
     tags: "Javascript, HTML, CSS",
     date: "Aug 2025 - Present",
-    link: "https://github.com/AlexLenh7/Lock-In-Extension",
+    link: "https://github.com/AlexLenh7/chrome-extension",
   },
   {
     id: 4,
