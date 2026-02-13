@@ -44,9 +44,9 @@ function AboutPage({ setActiveTab }) {
                 Discord Bot
               </a>
               {", "}
-              to improve and automate my daily workflow, and a{" "}
+              to improve and automate my daily workflow, and{" "}
               <a href="https://github.com/AlexLenh7/Lock-In-Extension" target="_blank" className="link-styles">
-                Chrome Extension
+                Lock In - Chrome Extension
               </a>
               {", "}
               to reduce constant distractions and improve focus. My work currently focuses on backend development while

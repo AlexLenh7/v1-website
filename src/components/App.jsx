@@ -21,7 +21,7 @@ function App() {
           </span>
         </>
       ),
-      description: "Designer and Developer",
+      description: "Software Developer",
       summary: "Overview of my journey, technical skills, and the passion I bring to every project",
     },
     "#ExperiencePage": {

@@ -4,6 +4,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import LayersOutlinedIcon from "@mui/icons-material/LayersOutlined";
 import "../css/TechStack.css";
 import {
+  SiTypescript,
   SiJavascript,
   SiReact,
   SiNodedotjs,
@@ -21,6 +22,10 @@ const TechStack = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const techItems = [
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
+    },
     {
       name: "JavaScript",
       icon: <SiJavascript />,

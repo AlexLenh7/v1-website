@@ -2,7 +2,7 @@ import sysadmin from "../assets/SysadminThumbnail.png";
 import blackjack from "../assets/Blackjack.png";
 import facemodel from "../assets/FaceDetectionThumbnail.png";
 import discordbotThumbnail from "../assets/DiscordbotThumbnail.png";
-import extension from "../assets/ExtensionThumbnail.png";
+import extension from "../assets/LockInThumbnail1.jpg";
 import familyTracker from "../assets/FamilyTrackerThumbnail.png";
 
 const Projects = [
@@ -27,12 +27,13 @@ const Projects = [
   },
   {
     id: 3,
-    title: "Chrome Extension",
+    title: "Lock In - Distraction Manager",
     img: extension,
-    description: "Tracks time on each website with tools to block interactions based on user defined settings",
-    tags: "Javascript, HTML, CSS",
-    date: "Aug 2025 - Present",
-    link: "https://github.com/AlexLenh7/chrome-extension",
+    description:
+      "A powerful and easy to use Chrome extension designed to track and limit time spent on websites with around 96% data accuracy and 99% uptime.",
+    tags: "Typescript, Javascript, React, Tailwind, Puppeteer, Vite",
+    date: "Aug 2025 - Feb 2025",
+    link: "https://github.com/AlexLenh7/Lock-In-Distraction-Blocker",
   },
   {
     id: 4,
