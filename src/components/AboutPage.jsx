@@ -35,8 +35,8 @@ function AboutPage({ setActiveTab }) {
                 @SDSU
               </a>{" "}
               combining backend systems with my passion for detailed designs. During my time at SDSU, I obtained strong
-              fundamentals while being adaptable at learning in a fast pace enviornment. I have a strong passion for web
-              and software development through various projects I have built.
+              fundamentals while being adaptable at learning in a fast pace enviornment. I have a strong passion for
+              frontend design and software development through various projects I have built.
             </div>
             <div className="about-p2 stagger-item delay-2">
               Some of my notable projects include building a{" "}
@@ -49,8 +49,8 @@ function AboutPage({ setActiveTab }) {
                 Lock In - Chrome Extension
               </a>
               {", "}
-              to reduce constant distractions and improve focus. My work currently focuses on backend development while
-              exploring the frontend.
+              to reduce constant distractions and improve focus. My work currently focuses on frontend development and
+              design while exploring complex backend systems.
             </div>
             <div className="about-p3 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and occasionally graphic
