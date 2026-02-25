@@ -2,7 +2,7 @@ import sysadmin from "../assets/SysadminThumbnail.png";
 import blackjack from "../assets/Blackjack.png";
 import facemodel from "../assets/FaceDetectionThumbnail.png";
 import discordbotThumbnail from "../assets/DiscordbotThumbnail.png";
-import extension from "../assets/LockInThumbnail1.jpg";
+import extension from "../assets/LockInThumbnail.jpg";
 import familyTracker from "../assets/FamilyTrackerThumbnail.png";
 
 const Projects = [

@@ -45,12 +45,12 @@ function AboutPage({ setActiveTab }) {
               </a>
               {", "}
               to improve and automate my daily workflow, and{" "}
-              <a href="https://github.com/AlexLenh7/Lock-In-Extension" target="_blank" className="link-styles">
-                Lock In - Chrome Extension
+              <a href="https://github.com/AlexLenh7/Lock-In" target="_blank" className="link-styles">
+                Lock In
               </a>
               {", "}
-              to reduce constant distractions and improve focus. My work currently focuses on frontend development and
-              design while exploring complex backend systems.
+              an extension to reduce constant distractions and improve focus. My work currently focuses on frontend
+              development and design while exploring complex backend systems.
             </div>
             <div className="about-p3 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and occasionally graphic
