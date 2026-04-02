@@ -1,7 +1,7 @@
 import "../css/AboutPage.css";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
-import Profile from "../assets/Profile.jpg";
+import Profile from "../assets/Linkedinpic.webp";
 import { GitHubCalendar } from "react-github-calendar";
 import FeaturedProjects from "./FeaturedProjects";
 import GitHubIcon from "@mui/icons-material/GitHub";

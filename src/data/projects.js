@@ -30,7 +30,7 @@ const Projects = [
     title: "Lock In - Distraction Manager",
     img: extension,
     description:
-      "A powerful and easy to use Chrome extension designed to track and limit time spent on websites with around 96% data accuracy and 99% uptime.",
+      "Powerful Chrome extension by tracking and limiting time spent on websites. Monitor productivity, set daily limits, and build better browsing habits.",
     tags: "Typescript, Javascript, React, Tailwind, Puppeteer, Vite",
     date: "Aug 2025 - Feb 2025",
     link: "https://github.com/AlexLenh7/Lock-In-Distraction-Blocker",
