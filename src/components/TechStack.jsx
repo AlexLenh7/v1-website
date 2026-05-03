@@ -17,11 +17,16 @@ import {
   SiExpress,
   SiVite,
 } from "react-icons/si";
+import { PiFileCppFill } from "react-icons/pi";
 
 const TechStack = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const techItems = [
+    {
+      name: "C++",
+      icon: <PiFileCppFill />,
+    },
     {
       name: "TypeScript",
       icon: <SiTypescript />,
@@ -78,7 +83,7 @@ const TechStack = () => {
     <div className={`expandable ${isExpanded ? "expanded" : ""}`} style={{ display: "contents" }}>
       <div className="expandable-header link-styles stagger-item delay-4" onClick={() => setIsExpanded(!isExpanded)}>
         <LayersOutlinedIcon />
-        Tech Stack
+        Technical Skills
         {isExpanded ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
       </div>
 

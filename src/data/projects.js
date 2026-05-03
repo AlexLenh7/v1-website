@@ -4,6 +4,7 @@ import facemodel from "../assets/FaceDetectionThumbnail.png";
 import discordbotThumbnail from "../assets/DiscordbotThumbnail.png";
 import extension from "../assets/LockInThumbnail.jpg";
 import familyTracker from "../assets/FamilyTrackerThumbnail.png";
+import gachasim from "../assets/gacha-sim.png";
 
 const Projects = [
   {
@@ -18,22 +19,23 @@ const Projects = [
   },
   {
     id: 2,
-    title: "UNIX/System Administration",
-    img: sysadmin,
-    description:
-      "Multi-platform virtual infrastructure across FreeBSD, OpenBSD, Linux, Solaris, and AIX, integrating mail, web, file, and print servers",
-    tags: "Bash, Azure, Linux, Unix, SysAdmin",
-    date: "Jan 2025 - May 2025",
-  },
-  {
-    id: 3,
     title: "Lock In - Distraction Manager",
     img: extension,
     description:
       "Powerful Chrome extension by tracking and limiting time spent on websites. Monitor productivity, set daily limits, and build better browsing habits.",
     tags: "Typescript, Javascript, React, Tailwind, Puppeteer, Vite",
-    date: "Aug 2025 - Feb 2025",
+    date: "Jan 2026 - Mar 2026",
     link: "https://github.com/AlexLenh7/Lock-In-Distraction-Blocker",
+  },
+  {
+    id: 3,
+    title: "Gacha Probability Engine",
+    img: gachasim,
+    description:
+      "Built a Monte Carlo simulation engine to compare and contrast simulation results across banner configs with ASCII histogram distribution plots",
+    tags: "C++, CMake",
+    date: "Mar 2025 - Apr 2026",
+    link: "https://github.com/AlexLenh7/Gacha-Probability-Engine",
   },
   {
     id: 4,
@@ -46,6 +48,15 @@ const Projects = [
   },
   {
     id: 5,
+    title: "UNIX/System Administration",
+    img: sysadmin,
+    description:
+      "Multi-platform virtual infrastructure across FreeBSD, OpenBSD, Linux, Solaris, and AIX, integrating mail, web, file, and print servers",
+    tags: "Bash, Azure, Linux, Unix, SysAdmin",
+    date: "Jan 2025 - May 2025",
+  },
+  {
+    id: 6,
     title: "CLI Blackjack Game",
     img: blackjack,
     description: "Single-player CLI Blackjack game in C++",
@@ -54,7 +65,7 @@ const Projects = [
     link: "https://github.com/AlexLenh7/Blackjack-Project",
   },
   {
-    id: 6,
+    id: 7,
     title: "Family Country Tracker",
     img: familyTracker,
     description:

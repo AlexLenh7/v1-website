@@ -1,17 +1,28 @@
 const experience = [
   {
     id: 1,
-    title: "Full-Stack Web Applications",
+    title: "Gacha Probability Engine",
     description: [
-      "Built multiple full-stack web applications using ReactJS, creating reusable component architectures with props and integrating RESTful APIs for seamless client to server communication",
-      "Developed backend services with Express, implementing middleware, server-side routing, request validation, and optimized CRUD operations using PostgreSQL and Postman for endpoint testing",
-      "Designed dynamic server rendered pages with EJS and enhanced interactivity using jQuery for responsive, event-driven DOM manipulation",
+      "Built a Monte Carlo simulation engine in C++ with thread-safe task distribution, splitting runtime batches to parallelize 1M+ simulations, reducing elapsed runtime by ~8x",
+      "Developed a statistical aggregation pipeline over 1M+ simulation results, applying a O(n log n) sort-once with a result cache to optimize repeated queries in O(1) after the initial computation across merged thread results",
+      "Implemented custom binary serialization with RAII file guards to compare and contrast simulation results across banner configs, with a histogram renderer that outputs ASCII distribution plots",
     ],
-    tags: "React, NodeJS, RESTful APIs, Postgres, jQuery, Express",
-    date: "Oct 2025 - Dec 2025",
+    tags: "C++, CMake",
+    date: "Mar 2026 - Apr 2026",
   },
   {
     id: 2,
+    title: "Lock In - Chrome Extension",
+    description: [
+      "Architected background scripts using 6+ Chrome APIs to fetch real-time user data via 30 second polling intervals to ensure data accuracy across restricted environments",
+      "Developed an analytics frontend with React and TypeScript to provide real-time data visualization through custom weighted algorithms to calculate dynamic user-friendly metrics",
+      "Optimized data synchronization performance by implementing a 100ms debounce on rapid API events and parallel async operations to reduce race conditions and redundant storage writes calls",
+    ],
+    tags: "Typescript, Javascript, React, Tailwind",
+    date: "Jan 2026 - Mar 2026",
+  },
+  {
+    id: 3,
     title: "Backend Discord Bot",
     description: [
       "Designed a backend focused Discord bot with Node.js for scalability and utilizing Discord.js, a powerful library, to streamline REST and websocket API’s with Discord servers",
@@ -21,17 +32,6 @@ const experience = [
     tags: "Javascript, Node.js, SQLite, API",
     date: "May 2025 - Aug 2025",
     link: "https://github.com/AlexLenh7/Discord-Bot",
-  },
-  {
-    id: 3,
-    title: "UNIX/System Administration",
-    description: [
-      "Built a full-service virtual infrastructure across five operating systems, including DNS, LDAP, mail, web, file, and print servers using FreeBSD, OpenBSD, Linux (Rocky/Ubuntu), Solaris, AIX, and Azure",
-      "Developed Bash scripts to automate SSH key generation and secure key distribution across virtual machines running Open/FreeBSD and servers cutting manual key management time by 75%",
-      "Deployed and managed a private and public cloud environment with automated backups, P2V conversion, certificate management, and agent-forwarded secure access",
-    ],
-    tags: "Bash, Azure, Linux, Unix",
-    date: "Jan 2025 - May 2025",
   },
 ];
 

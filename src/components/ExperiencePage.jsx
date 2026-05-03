@@ -8,7 +8,7 @@ import WorkHistoryOutlinedIcon from "@mui/icons-material/WorkHistoryOutlined";
 import education from "../data/education";
 import CreateEducation from "./CreateEducation";
 import LabelImportantOutlineIcon from "@mui/icons-material/LabelImportantOutline";
-import Resume from "../assets/Resume_AlexLenh.pdf";
+import Resume from "../assets/Alex_Lenh_SE_Resume.pdf";
 
 // Dynamically adds from project
 function ExperiencePage() {
@@ -40,7 +40,7 @@ function ExperiencePage() {
         <TabList className={"exp-tab-wrapper stagger-item delay-1"}>
           <Tab selectedClassName="active" className={"exp-tab-1 tab-link-styles"}>
             <WorkHistoryOutlinedIcon />
-            Experience
+            Related Experience
           </Tab>
           <Tab selectedClassName="active" className={"exp-tab-2 tab-link-styles"}>
             <SchoolOutlinedIcon />

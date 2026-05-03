@@ -26,7 +26,7 @@ function FeaturedProjects({ setActiveTab }) {
         </div>
         <div className="featured-wrapper">
           {projects
-            .filter((entry) => entry.id === 1 || entry.id === 3)
+            .filter((entry) => entry.id === 1 || entry.id === 2)
             .map((entry) => (
               <CreateProject
                 key={entry.id}
