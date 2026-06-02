@@ -30,16 +30,16 @@ function AboutPage({ setActiveTab }) {
           </div>
           <div className="about-p">
             <div className="about-p1 stagger-item delay-1">
-              Recent CS grad{" "}
+              I am a Computer Science graduate from{" "}
               <a href="https://www.sdsu.edu/" target="_blank" className="link-styles">
-                @SDSU
+                SDSU
               </a>{" "}
-              combining backend systems with my passion for detailed designs. During my time at SDSU, I obtained strong
-              fundamentals while being adaptable at learning in a fast pace enviornment. I have a strong passion for
-              frontend design and software development through various projects I have built.
+              with a passion for building impactful experiences. Currently focused on backend systems and responsive
+              user centric designs. My recent work deals with low-level C++ and full-stack web apps with Java, React,
+              and Typescript.
             </div>
             <div className="about-p2 stagger-item delay-2">
-              Some of my notable projects include building a{" "}
+              My notable projects include building a{" "}
               <a href="https://github.com/AlexLenh7/Discord-Bot" target="_blank" className="link-styles">
                 Discord Bot
               </a>
@@ -49,8 +49,8 @@ function AboutPage({ setActiveTab }) {
                 Lock In
               </a>
               {", "}
-              an extension to reduce constant distractions and improve focus. My work currently focuses on frontend
-              development and design while exploring complex backend systems.
+              an extension to reduce constant distractions and improve focus. I enjoy the challenge of engineering
+              solutions end-to-end from debugging performance issues to making complex systems feel intuitve.
             </div>
             <div className="about-p3 stagger-item delay-3">
               Outside of software, some of my hobbies include playing games, watching anime, and occasionally graphic
